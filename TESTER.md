@@ -7,7 +7,8 @@ samples in `EXAMPLES/_test-photos/` to run the whole thing.
 ---
 
 ## Option A — your AI agent (the main way)
-1. Unzip this folder.
+1. Get the kit: `git clone https://github.com/nextworkengineering/build-brew-kit.git`
+   (or unzip the folder, if Jon sent you a zip instead).
 2. Open it in Claude Code or Cursor.
 3. Paste this:
 
@@ -16,6 +17,11 @@ samples in `EXAMPLES/_test-photos/` to run the whole thing.
    > for LinkedIn.
 
 4. It'll ask you a few things about the night, show you a plan, then make the posts.
+
+First-run notes (your agent will usually handle these for you):
+- The renderer needs a headless browser once: `npx playwright install chromium`.
+- The LinkedIn PDF needs ImageMagick or Python Pillow (`brew install imagemagick`, or `pip install pillow`).
+  Instagram images need nothing extra.
 
 ## Option B — Paper (no code)
 1. Open the Paper file Jon sends you, and duplicate it.

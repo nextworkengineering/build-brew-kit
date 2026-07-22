@@ -81,5 +81,11 @@ open(path, "w", encoding="utf-8").write(s)
 PY
 fi
 
-npx playwright screenshot --viewport-size="${W},${H}" --wait-for-timeout=450 "$tmp" "$OUT" >/dev/null 2>&1
-echo "rendered $OUT (${W}x${H})"
+if err=$(npx playwright screenshot --viewport-size="${W},${H}" --wait-for-timeout=450 "$tmp" "$OUT" 2>&1); then
+  echo "rendered $OUT (${W}x${H})"
+else
+  echo "render FAILED for $OUT" >&2
+  echo "$err" | sed 's/^/  /' >&2
+  echo "  first run? install the browser once, then retry:  npx playwright install chromium" >&2
+  exit 1
+fi
