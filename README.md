@@ -16,36 +16,23 @@ You ran a room where people built real things. That's leadership, and this is yo
 ## What's in the kit
 
 - `AGENT.md` — **the one file you hand to your AI agent.** It carries the brand rules, the kit of parts, the copy rules, and how to render and export, so your posts look right by default.
-- `templates/archetypes/` — the **kit of parts**: six ready fill-in post templates + `render.sh` (fill the slots, get a 1080×1350 PNG) + `export.sh` (package for Instagram or LinkedIn). See its `README.md` for the archetype list.
+- `templates/archetypes/` — the **kit of parts**: six post archetypes (the design source for the Paper boards). See its `README.md` for the archetype list and slots.
 - `brand/` — the colours, fonts, and voice that make a post feel like NextWork.
 - `templates/caption-and-tags.md` — the post's text field, who to tag, and how to credit NextWork and open the door for the next person (the growth loop, in your voice).
 - `start-your-own-build-and-brew.md` — never run one? The whole format on one page. The on-ramp for the next host.
-- `free-paper-path/` — the optional Paper route, and where the free-tier limits are.
+- `free-paper-path/` — running the kit on a free Paper account, and where the free-tier limits are.
 - `EXAMPLES/` — sample event photos and rendered demos.
 
 ## Quickstart
 
-The easy way is to let your AI agent drive:
+Your AI agent does the design. You talk, you approve, it builds.
 
 1. **Clone this repo** (or download the ZIP).
-2. **Hand `AGENT.md` to your AI agent** (Claude Code, Cursor, or Paper) and point it at your event photos:
-   > "Read AGENT.md and follow it. My Build & Brew photos are in `./photos`. Make me a single post and a short carousel about the event, then package it for LinkedIn."
-3. The agent picks the right archetype, writes the copy in your voice, renders the PNGs, and (when you tell it where you're posting) exports the right file.
-
-Prefer to run it yourself? Every template is a fill-in HTML file — see `templates/archetypes/README.md`:
-
-```
-cd templates/archetypes
-npx playwright install chromium          # one-time (the warning box is expected)
-./render.sh A-photo-serif.html post.png \
-  PHOTO=../../EXAMPLES/_test-photos/group-dusk.jpg \
-  META="Build & Brew · Austin" LINE1="One night in Austin," \
-  ACCENT="we built" DESC="and shipped six real things."
-```
+2. **Hand `AGENT.md` to your AI agent** — Claude Code or Cursor, with the **Paper MCP connected** — and point it at your event photos:
+   > "Read AGENT.md and follow it. My Build & Brew photos are in `./photos`. Make me a single post and a short carousel about the event."
+3. It asks about the night, shows a plan (Gate 1), builds the post on the **Paper canvas** for you to react to (Gate 2), runs a brand-QA check, then exports it. Everything happens in Paper — there is nothing to install.
 
 **No photos (virtual event)?** Use the text-only archetype (F), or a screenshot of what a member built as the photo in D. See `AGENT.md`.
-
-**The optional Paper path** (the file `Build & Brew Kit`) gives you the licensed fonts and finer layout control — duplicate a template board, swap the photo and copy, export.
 
 ## The ask (optional, but it's the flywheel)
 

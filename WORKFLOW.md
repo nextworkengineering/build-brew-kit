@@ -30,24 +30,26 @@ picks are a lighting decision (warm/dim → cinematic A/G; bright/celebratory �
 ### Phase 1 · Intake → draft  · **Gate 1**
 A short conversation *before any image is made*. The agent asks:
 1. Single post or carousel? (Unsure → tell me about the night, I'll recommend.)
-2. **What happened?** The arc — doors, pairing up, building, demos, who shipped what, the one
-   human moment. *These words become the copy.*
-3. Who are you (Build Master name), event name, city.
-4. The numbers — headcount, projects shipped, any "first ever."
-5. Where are you posting — Instagram, LinkedIn, or both.
-6. The look — ground **light (paper)** or **dark (leather)**? Accent — pumpkin, cornflower,
+2. **What happened?** The arc — doors, pairing up, building, demos, the one human moment.
+   *These words become the copy.*
+3. **What did you build?** The actual projects — the app, site, agent, or thing the group or a
+   standout person shipped, not just how many. *This is what the headline names.*
+4. Who are you (Build Master name), event name, city.
+5. The numbers — headcount, projects shipped, any "first ever."
+6. Where are you posting — Instagram, LinkedIn, or both.
+7. The look — ground **light (paper)** or **dark (leather)**? Accent — pumpkin, cornflower,
    plum, canary, sand, or **none**? *Asked every run; no default.*
 
 The agent drafts the archetype pick(s) + the line(s) in the Build Master's voice and **shows
 them**. → **Gate 1: yes on the copy + plan before anything renders.**
 
 ### Phase 2 · Preview → iterate  · **Gate 2**
-- **With Paper (canonical):** the agent builds the chosen archetypes as boards on the Paper
-  canvas ("Build & Brew Kit" file), fills photo + copy, applies the chosen ground + accent, and
-  puts the **caption + tags as a text board beside the slides** so the whole post is in one
-  place. The Build Master iterates live — swap a photo, change a line, try another accent.
-- **Without Paper (fallback):** the agent renders the slides with `render.sh` and shows the PNGs
-  in chat. Same purpose — see it, tweak it, re-render.
+The agent builds the chosen archetypes as boards on the Paper canvas ("Build & Brew Kit" file),
+fills photo + copy, applies the chosen ground + accent, and puts the **caption + tags as a text
+board beside the slides** so the whole post is in one place. The Build Master reacts and steers
+(swap a photo, change a line, try another accent) and the agent makes the change. The agent designs;
+the Build Master does not hand-build. If the Build Master edits the canvas themselves, the agent runs
+the **brand-QA read-back** on the board before moving on.
 
 **The magic trick (before Gate 2).** Correct-and-clean is the floor. The agent asks for the one
 human thing it can't invent: the candid laughing photo over the posed one, the line only the
@@ -56,10 +58,10 @@ fills the next room. See `magic_trick.md`.
 
 → **Gate 2: yes on the visuals before export.**
 
-### Phase 3 · Export (only after Gate 2)
-- Instagram single → PNG 1080×1350.
-- Instagram carousel → numbered PNGs (01, 02, …).
-- LinkedIn carousel → one PDF, a slide per page (a swipeable document).
+### Phase 3 · Export from Paper (only after Gate 2, and after the brand-QA read-back passes)
+- Instagram single → one image, 1080×1350.
+- Instagram carousel → the boards as images, in swipe order (01, 02, …).
+- LinkedIn carousel → one PDF, a board per page (a swipeable document).
 
 ### Phase 4 · Post (and close the loop)
 The agent surfaces the caption + tags and the tag-the-faces checklist. Tagging the people in the
@@ -73,15 +75,15 @@ photos is the single biggest reach lever. Then it closes the loop, in the Build 
 
 ---
 
-## Preview surface — Paper-first, scripts as fallback
-Paper is the canonical preview/iterate surface (richest control, licensed fonts, live tweaks).
-The HTML templates + `render.sh` are the **portable fallback** so a Build Master with no Paper
-can still see and approve before exporting. Both honor the same two gates.
+## Surface — Paper only
+Paper is the one surface. The agent builds and exports every post on the Paper canvas; there is no
+local renderer. The archetype HTML in `templates/archetypes/` is the design source the boards are
+built from, not something anyone runs.
 
-> **Ground + accent are wired both ways.** On Paper you apply them directly. In the scripts, pass
-> `MODE=light|dark` (ground on the block/text archetypes D, numbers, build-master, F) and
-> `TINT=<accent|none>` (the accent colour; `none` = fully tonal). Photo slides (A, G) stay
-> photo-with-scrim, so MODE mainly moves the block/text archetypes.
+> **Ground + accent** are token controls on the board: ground = light (paper + ink) or dark
+> (leather + cream) on the block/text archetypes (D, numbers, build-master, F); accent = one of
+> pumpkin, cornflower, plum, canary, sand, emerald, or none (`none` = fully tonal). Photo slides
+> (A, G) stay photo-with-scrim, so ground mainly moves the block/text archetypes.
 
 ---
 

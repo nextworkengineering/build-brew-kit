@@ -1,34 +1,27 @@
 # Try the Build & Brew Kit (thanks, Maya!)
 
-You're one of the first to test this. The kit turns your event photos into clean, on-brand posts.
-There are two ways to try it. Pick whichever fits how you work. No photos of your own yet? Use the
-samples in `EXAMPLES/_test-photos/` to run the whole thing.
+You're one of the first to test this. The kit turns your event photos into clean, on-brand posts, and
+your AI agent does the design for you on the Paper canvas. You don't design anything yourself: you talk,
+you approve, it builds. No photos of your own yet? Use the samples in `EXAMPLES/_test-photos/` to run the
+whole thing.
 
----
+## What you need
+- The kit: `git clone https://github.com/nextworkengineering/build-brew-kit.git` (or unzip, if Jon sent a zip).
+- An AI agent (Claude Code or Cursor) with the **Paper MCP connected**. That's the one requirement, because
+  the agent builds everything on the Paper canvas. There is nothing else to install.
 
-## Option A — your AI agent (the main way)
-1. Get the kit: `git clone https://github.com/nextworkengineering/build-brew-kit.git`
-   (or unzip the folder, if Jon sent you a zip instead).
-2. Open it in Claude Code or Cursor.
-3. Paste this:
+## Run it
+1. Open the kit in Claude Code or Cursor.
+2. Paste this:
 
    > Read AGENT.md and follow it. My Build & Brew photos are in `EXAMPLES/_test-photos` (or point it
-   > at your own folder). Make me a single post and a short carousel about the night, then export it
-   > for LinkedIn.
+   > at your own folder). Make me a single post and a short carousel about the night.
 
-4. It'll ask you a few things about the night, show you a plan, then make the posts.
+3. It will ask you a few things about the night, show you a plan (Gate 1), build the post on the Paper
+   canvas for you to react to (Gate 2), then export it.
 
-First-run notes (your agent will usually handle these for you):
-- The renderer needs a headless browser once: `npx playwright install chromium`.
-- The LinkedIn PDF needs ImageMagick or Python Pillow (`brew install imagemagick`, or `pip install pillow`).
-  Instagram images need nothing extra.
-
-## Option B — Paper (no code)
-1. Open the Paper file Jon sends you, and duplicate it.
-2. Read the **Guide** page first.
-3. Duplicate a template board, swap in your photo and your words, then export.
-
----
+If you do tweak the canvas yourself, ask it to run the QA read-back on the board before exporting, so it
+stays on-brand.
 
 ## What we'd love your feedback on
 - Was it clear what to do, from start to finish?
@@ -36,5 +29,5 @@ First-run notes (your agent will usually handle these for you):
 - Did it feel like **your** brand and your voice, or generic?
 - Where did you get stuck, confused, or annoyed?
 
-This is early and we're iterating fast, so be blunt. Tell us what's clunky. That's the most useful
-thing you can give us.
+This is early and we're iterating fast, so be blunt. Tell us what's clunky. That's the most useful thing
+you can give us.
