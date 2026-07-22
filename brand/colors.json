@@ -1,0 +1,30 @@
+{
+  "_note": "Canonical palette for the Build & Brew kit. These hexes match the templates in templates/archetypes/ and AGENT.md exactly — if you change one, change all three. Derived from the NextWork kernel; see scripts/sync-from-kernel.md.",
+  "core": {
+    "paper": "#f8f5f0",
+    "ink": "#26221e",
+    "leather": "#211d19",
+    "cream": "#f8f5f0",
+    "muted": "#8e857a"
+  },
+  "accents": {
+    "emerald": "#11cca6",
+    "cornflower": "#308ded",
+    "pumpkin": "#fa8a45",
+    "plum": "#875bf7",
+    "canary": "#ffdd2d",
+    "sand": "#e5dcc7"
+  },
+  "text": {
+    "onPaper": "#26221e",
+    "onDark": "#f8f5f0",
+    "muted": "#8e857a",
+    "onPhoto": "#f8f5f0"
+  },
+  "rules": [
+    "Ground is paper #f8f5f0 (never pure white) or leather #211d19 (never pure black).",
+    "One accent per post, default emerald. A small highlight, never a big saturated block.",
+    "Plum stays out of large colour blocks.",
+    "Canary #ffdd2d is the yellow highlight accent."
+  ]
+}

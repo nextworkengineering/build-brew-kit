@@ -1,0 +1,10 @@
+# Internal only — never publish (real attendee photos, references, host library)
+_internal/
+
+# Working output / scratch renders
+OUT/
+
+# System / temp
+.DS_Store
+.render_*.html
+node_modules/
