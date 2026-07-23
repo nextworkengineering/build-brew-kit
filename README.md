@@ -30,7 +30,7 @@ Your AI agent does the design. You talk, you approve, it builds.
 1. **Clone this repo** (or download the ZIP).
 2. **Hand `AGENT.md` to your AI agent** — Claude Code or Cursor, with the **Paper MCP connected** — and point it at your event photos:
    > "Read AGENT.md and follow it. My Build & Brew photos are in `./photos`. Make me a single post and a short carousel about the event."
-3. It asks about the night, shows a plan (Gate 1), builds the post on the **Paper canvas** for you to react to (Gate 2), runs a brand-QA check, then exports it. Everything happens in Paper — there is nothing to install.
+3. It asks about the night, shows a plan (Gate 1), builds the post on the **Paper canvas** for you to react to (Gate 2), runs a brand-QA check, then exports it. Everything happens in Paper — there is nothing to install. **One manual step:** Paper runs in the cloud, so when the agent is ready to place a photo it asks you to drag the JPGs onto the Paper file (it can't reach your disk itself).
 
 **No photos (virtual event)?** Use the text-only archetype (F), or a screenshot of what a member built as the photo in D. See `AGENT.md`.
 

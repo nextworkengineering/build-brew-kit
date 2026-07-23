@@ -25,7 +25,10 @@ The Build Master makes a folder on their Desktop and drops the night's photos in
 ~/Desktop/build-brew-<city>/        e.g. ~/Desktop/build-brew-austin/
 ```
 They point the agent at it. The agent looks at the photos before choosing anything — archetype
-picks are a lighting decision (warm/dim → cinematic A/G; bright/celebratory → D invite).
+picks are a lighting decision (warm/dim → cinematic A/G; bright/celebratory → D invite). Convert
+HEIC to JPG first (Paper can't read HEIC). Note: the agent can read the folder, but Paper renders
+in the cloud, so during Phase 2 the Build Master **drags** the chosen photos onto the Paper file —
+the agent can't push local images onto the canvas itself.
 
 ### Phase 1 · Intake → draft  · **Gate 1**
 A short conversation *before any image is made*. The agent asks:
@@ -44,9 +47,11 @@ The agent drafts the archetype pick(s) + the line(s) in the Build Master's voice
 them**. → **Gate 1: yes on the copy + plan before anything renders.**
 
 ### Phase 2 · Preview → iterate  · **Gate 2**
-The agent builds the chosen archetypes as boards on the Paper canvas ("Build & Brew Kit" file),
-fills photo + copy, applies the chosen ground + accent, and puts the **caption + tags as a text
-board beside the slides** so the whole post is in one place. The Build Master reacts and steers
+The agent builds the chosen archetypes as boards on the Paper canvas — either by duplicating the
+pre-built boards in the "Build & Brew Kit" master file (Mode A) or by writing the archetype HTML
+into a fresh file (Mode B; see `AGENT.md`). The Build Master **drags the photos onto the file** and
+the agent sets each board's photo from them, fills copy, applies the chosen ground + accent, and
+puts the **caption + tags as a text board beside the slides** so the whole post is in one place. The Build Master reacts and steers
 (swap a photo, change a line, try another accent) and the agent makes the change. The agent designs;
 the Build Master does not hand-build. If the Build Master edits the canvas themselves, the agent runs
 the **brand-QA read-back** on the board before moving on.
@@ -77,8 +82,11 @@ photos is the single biggest reach lever. Then it closes the loop, in the Build 
 
 ## Surface — Paper only
 Paper is the one surface. The agent builds and exports every post on the Paper canvas; there is no
-local renderer. The archetype HTML in `templates/archetypes/` is the design source the boards are
-built from, not something anyone runs.
+local renderer. The kit has two matched artifacts: the **master Paper file** (the visual canon,
+where designs are decided) and the **archetype HTML** in `templates/archetypes/` (the portable
+source you build FROM in a fresh file). They are kept in sync; `MANIFEST.md` is the contract that
+records which board maps to which HTML and whether they match. When they differ, the board wins and
+the HTML is corrected up to it.
 
 > **Ground + accent** are token controls on the board: ground = light (paper + ink) or dark
 > (leather + cream) on the block/text archetypes (D, numbers, build-master, F); accent = one of

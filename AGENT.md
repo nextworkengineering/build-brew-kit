@@ -18,6 +18,10 @@ Story-first, never output-first. Do NOT render or export until you've heard what
 
 0 · SETUP. Ask them to make a folder on their Desktop and drop the night's photos in
    (e.g. ~/Desktop/build-brew-austin/). Have them point you at it. Look at the photos before you choose anything.
+   You can READ their folder, but the Paper canvas renders in the cloud and cannot reach their disk — so you
+   cannot push a photo onto a board yourself. When you build (Phase 2), ask them to DRAG the chosen photos
+   onto the Paper file; you then set each board's photo from the image they dragged in. Convert HEIC to JPG
+   first (see PHOTOS) — Paper can't read HEIC.
 
 1 · INTAKE — ask, then draft. A short conversation before any image:
    - Single post or carousel? (Not sure? Have them tell you about the night, then you recommend.)
@@ -59,7 +63,7 @@ A smart friend who has already figured out what you are struggling with. Confide
 
 == THE KIT OF PARTS (pick the archetype that fits the moment) ==
 Each is a ready board in the Paper file (design source in templates/archetypes/). Choose by the photo and the job:
-- A · photo + serif (contain)  (A-photo-contain.html) - one photo shown whole on a paper ground (never cropped), a serif line + one big word below it. The default single post, and the carousel cover. Group- and landscape-safe by default. A tall portrait photo floats small here; for a portrait that suits a full frame you can cover-crop it, but never cover-crop a wide group.
+- A · photo + serif (contain)  (A-photo-contain.html) - one photo shown whole on a paper ground (never cropped), a serif line + one big word below it. The default single post. Group- and landscape-safe by default. A tall portrait photo floats small here; for a portrait that suits a full frame you can cover-crop it, but never cover-crop a wide group.
 - D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a bold grotesk claim below. A punchy poster. Good for bright, empty-topped photos, and group-safe: the photo band + block keep the whole crew visible.
 - F · narrative text  (F-narrative-text.html) - no photo. One two-tone statement (claim bright, follow-up muted). A story beat or a hot take.
 - G · timestamp moment  (G-timestamp.html) - a photo with one centered time + one line. String them in order to tell the night (6:00 doors -> 7:30 paired up -> 9:00 demos). The carousel spine.
@@ -67,7 +71,7 @@ Each is a ready board in the Paper file (design source in templates/archetypes/)
 - Build Master story  (individual-build-master.html) - names YOU + your event, told first person, two-tone. A single post that sells the event by telling how you built something real.
 
 SINGLE POST (default, lowest effort): one of A / D / F / Build Master story. One share is a win.
-CAROUSEL: cover (A or D) -> a few G timestamp moments -> Numbers -> an invite (A or D). Keep the same look on every slide.
+CAROUSEL: a full-bleed Cover board -> a few G timestamp moments -> Numbers -> a full-bleed Invite board. Keep the same look on every slide. The Cover and Invite are their own full-bleed scrim boards in the master file (duplicate them) — the cover is NOT archetype A.
 Virtual event, no photos? Use F (text only), or a screenshot of what a member built as the photo in D (the block carries the words, never put text over the UI).
 
 == COPY RULES (write like a builder, not a brochure) ==
@@ -125,18 +129,27 @@ Caption + tags: [draft from templates/caption-and-tags.md — the post's text fi
 
 ## HOW TO BUILD & EXPORT (Paper only)
 
-**One surface: the Paper canvas.** You build every post in the **Build & Brew Kit** Paper file and export from Paper. There is no local renderer — no Playwright, no ImageMagick, no Pillow, nothing to install. This assumes the Paper MCP is connected (the NextWork setup). If it isn't, say so and stop; do not improvise a local pipeline.
+**One surface: the Paper canvas.** You build every post on the Paper canvas and export from Paper. There is no local renderer — no Playwright, no ImageMagick, no Pillow, nothing to install. This assumes the Paper MCP is connected (the NextWork setup). If it isn't, say so and stop; do not improvise a local pipeline.
 
-**Build (Phase 2).** Duplicate the archetype board you picked, fill only the photo + copy slots, apply the chosen ground + accent via the board tokens, and place a caption + tags text board beside the slides so the whole post lives in one place. Iterate with the Build Master directly on the canvas.
+**Photos come from a human drag.** Paper renders server-side, so you cannot inject a local photo — no file paths, no base64 (a data-URI fill renders empty). Before you place any photo, ask the Build Master to DRAG the JPGs onto the Paper file. You then set each board's Photo frame fill from the image they dragged in. That is the one manual step; everything else is yours.
 
-> Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, numbers, build-master, F).
+**Two build modes** — pick by whether the Build Master has the shared master file.
+- **Mode A · master file (duplicate).** Default when they have the "Build & Brew Kit" master (file id `01KY2G5V12Q1BBPY7GC8PRSY1T`); its archetype boards are pre-built. `open_file` it → `duplicate_nodes` the board you picked into a working area → have them drag the photo → set the Photo frame's fill from the dragged image → `set_text_content` for the copy → apply ground + accent via the board tokens (`set_tokens` / `update_styles`) → `finish_working_on_nodes`. The carousel **Cover and Invite are full-bleed scrim boards that live only in the master — duplicate them; do NOT rebuild the cover as archetype A.**
+- **Mode B · fresh file (from HTML).** When there's no shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same drag / fill / copy / token / finish path. A, D, F, G, numbers, and Build Master have HTML; the Cover and Invite are master-only for now, so build a full carousel in Mode A until their HTML ships.
+
+Both modes converge at the drag: the human supplies the pixels, you do the rest. Place a caption + tags text board beside the slides so the whole post lives in one place.
+
+> Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, numbers, build-master, F).
+
+**Free Paper caveat.** Free Paper accounts have a weekly MCP-call cap; a full carousel may not fit. On free tier, prefer a single post, or use a paid account for carousels. See `free-paper-path/`.
 
 **Export (Phase 3).** From Paper: Instagram = the 1080×1350 boards as images in swipe order; LinkedIn = the boards combined into one PDF (a swipeable document). See the EXPORT rules in the system prompt above.
 
-**Design source.** The archetype HTML in `templates/archetypes/` is the source the Paper boards are built from — reference, not something you run.
+**Design source vs canon.** The archetype HTML in `templates/archetypes/` is the portable source you build FROM in Mode B. The master Paper file's boards are the visual canon. They are kept in sync (see `MANIFEST.md`); when they differ, the board wins and the HTML is corrected up to it.
 
 ## BRAND-QA READ-BACK (run before every export, and again after any human canvas edit)
 Before you export — and any time the Build Master has edited the canvas themselves — read the board back and check it. Use `get_screenshot` for the crop and feel, `get_computed_styles` for fonts and colour, the tree for structure. If any check fails, fix it or flag it; never export on a fail.
+> **Screenshot outage.** `get_screenshot` is sometimes down and returns empty. A blank screenshot does NOT mean the board is broken. Verify structure and brand with `get_computed_styles` (fonts, ground, accent hexes) + the node tree, and ask the Build Master to eyeball the canvas — they can also leave comments on a board, which you read with the comment tools. Never "fix" a board because the screenshot failed, and never export on a blank screenshot alone.
 1. Fonts: the headline is Suisse Neue (the serif display); everything else is FK Grotesk Neue. No third font. Labels letter-spacing 0.
 2. Grade: the board's grade is applied and the photo still reads as the moment, not mush.
 3. Accent: exactly one, used as a small highlight, never a big saturated block. A warm accent on a warm photo (no cold cornflower or plum on a warm event photo).
@@ -145,6 +158,9 @@ Before you export — and any time the Build Master has edited the canvas themse
 6. Ground: paper (never pure white) or leather (never pure black).
 7. Feed-size read: at a small size, the photo and the line still carry it.
 Logo-removal test: with no mark, does it still feel like NextWork (warm, clean, real)?
+
+**Copy-paste QA prompt** (hand this back to the agent to run the read-back on demand):
+> Run the brand-QA read-back on the board(s): fonts (Suisse Neue headline, FK Grotesk Neue everything else, no third font), grade applied and the photo still reads, exactly one accent used as a small highlight (warm accent on a warm photo), no face cropped out, one line / one claim per photo in sentence case, ground never pure white or pure black, and it still reads at feed size. If `get_screenshot` is empty, verify with `get_computed_styles` + the tree and ask me to eyeball it. Flag or fix any fail; never export on a fail.
 
 **AI-slop tells — reject on sight.** The whole point of this kit is that a vibe-coded post does NOT look vibe-coded. NextWork's feel is premium, quiet, editorial. If you see any of these, it is not shippable, fix it before Gate 2:
 - A neon or lime green, or ANY colour that is not an exact brand token. The only green is emerald #11cca6 (a muted teal, never a bright lime). The full set: pumpkin #fa8a45, canary #ffdd2d, sand #e5dcc7, cornflower #308ded, plum #875bf7. A colour picked "because it pops" is the #1 tell.
