@@ -6,7 +6,9 @@ Running a Build & Brew is leadership. Posting it is proof you ship and bring peo
 
 ## What you do
 
-You need three things: the free **Paper** desktop app, an AI tool (Claude Code or Cursor) with Paper connected, and this kit downloaded to your computer. Then:
+You need three things set up once: the free **Paper** desktop app, an AI tool (Claude Code or Cursor) with Paper connected, and this kit downloaded to your computer. That first-time setup is the only techie part. After it, you are just talking to your AI.
+
+Each time you want a post:
 
 1. Open the Paper app and **duplicate the kit's template** (link below). Build in your copy, never the shared original.
 2. Turn on Full Disk Access for Paper (System Settings > Privacy & Security > Full Disk Access, switch on Paper, then reopen it). This is the step that lets it use your photos.
@@ -32,4 +34,4 @@ Tag everyone in the photos. It is the single biggest thing that helps a post tra
 
 ---
 
-Brand values (colours, fonts, voice) live in `brand/`. On a free Paper account, `free-paper.md` covers what fits and where the limit is.
+A NextWork community kit. Brand values (colours, fonts, voice) live in `brand/`. On a free Paper account, `free-paper.md` covers what fits and where the limit is. Found a better layout or a fix? Open a pull request (see `CONTRIBUTING.md`).
