@@ -13,10 +13,20 @@ You ran a room where people built real things. That's leadership, and this is yo
 - **It compounds.** Tag the people in your photos. Their feeds see it, their friends see it, and your next event fills itself.
 - **It passes the torch.** Someone who sees your post thinks "I could do that too," starts their own first project, and runs their own night. You're the start of that in your city.
 
+## The look: your photos are the design
+
+The event photos are the design. The kit stays deliberately clean and editorial, and that restraint is the point: it's what keeps a post from looking AI-generated.
+
+- **Your photos are the hero.** Real faces mid-build carry the post. Everything else is quiet: one line of text, one small mark.
+- **Nothing layered on top.** No decorative gradients, no extra colours, no stickers, no clip-art, no pasted logos or assets. That "more is more" look is exactly the AI-slop tell we avoid.
+- **The agent holds the line.** If you ask for something off-style, it will explain why and steer you back. Trust it: that is how your post stays on-brand.
+
+One photo, one line, one small mark. When in doubt, remove something.
+
 ## What's in the kit
 
 - `AGENT.md` — **the one file you hand to your AI agent.** It carries the brand rules, the kit of parts, the copy rules, and how to render and export, so your posts look right by default.
-- `templates/archetypes/` — the **kit of parts**: six post archetypes (the design source for the Paper boards). See its `README.md` for the archetype list and slots.
+- `templates/archetypes/` — the **kit of parts**: five post archetypes (the design source for the Paper boards). See its `README.md` for the archetype list and slots.
 - `brand/` — the colours, fonts, and voice that make a post feel like NextWork.
 - `templates/caption-and-tags.md` — the post's text field, who to tag, and how to credit NextWork and open the door for the next person (the growth loop, in your voice).
 - `start-your-own-build-and-brew.md` — never run one? The whole format on one page. The on-ramp for the next host.
@@ -37,7 +47,7 @@ Do all four, in order. Skipping any one of them is the usual reason a run stalls
 ### Step 2 — run it
 1. **Clone this repo** (or download the ZIP) and open it in your AI agent (Claude Code or Cursor, with the **Paper MCP connected**).
 2. **Paste this**, filling in your photo folder and the file you named:
-   > "Read AGENT.md and follow it. My Build & Brew photos are in `./photos`, and I opened a blank Paper file called '<name>'. Make me a single post about the event."
+   > "Read AGENT.md and follow it. My Build & Brew photos are in `./photos`, and I duplicated the Build & Brew Kit template in Paper as '<name>' (or opened a blank Paper file called '<name>'). Make me a single post about the event."
 3. It asks about the night, shows you a plan to approve (Gate 1), builds it on the **Paper canvas** for you to react to (Gate 2), then exports it. You never touch a design tool.
 
 **No photos (virtual event)?** Use the text-only archetype (F), or a screenshot of what a member built as the photo in D. See `AGENT.md`.

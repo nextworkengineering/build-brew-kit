@@ -24,7 +24,7 @@ The Build Master makes a folder on their Desktop and drops the night's photos in
 ```
 ~/Desktop/build-brew-<city>/        e.g. ~/Desktop/build-brew-austin/
 ```
-They point the agent at it. The agent looks at the photos before choosing anything — archetype
+They also duplicate the Build & Brew Kit master template to their own Paper (the primary path, so the agent builds on the pre-built slot boards); a blank file is the fallback if they cannot access it. They point the agent at the photo folder. The agent looks at the photos before choosing anything — archetype
 picks are a lighting decision (warm/dim → cinematic A/G; bright/celebratory → D invite). Convert
 HEIC to JPG first (Paper can't read HEIC). With the Paper desktop app open and granted Full Disk
 Access (Phase 0), the agent places the photos itself via `paper-asset://`, no manual drag. If Full
@@ -32,7 +32,7 @@ Disk Access can't be granted, the Build Master drags the photos onto the file as
 
 ### Phase 1 · Intake → draft  · **Gate 1**
 A short conversation *before any image is made*. The agent asks:
-1. Single post or carousel? (Unsure → tell me about the night, I'll recommend.)
+1. Single post or carousel? Asked first. Single is the default and cheapest; a carousel is more work, so recommend single unless they want the full swipe. (Unsure → tell me about the night, I'll recommend single by default.)
 2. **What happened?** The arc — doors, pairing up, building, demos, the one human moment.
    *These words become the copy.*
 3. **What did you build?** The actual projects — the app, site, agent, or thing the group or a
@@ -40,16 +40,16 @@ A short conversation *before any image is made*. The agent asks:
 4. Who are you (Build Master name), event name, city.
 5. The numbers — headcount, projects shipped, any "first ever."
 6. Where are you posting — Instagram, LinkedIn, or both.
-7. The look — ground **light (paper)** or **dark (leather)**? Accent — pumpkin, cornflower,
-   plum, canary, sand, or **none**? *Asked every run; no default.*
+7. The look: ground **light (paper)** or **dark (leather)**? Accent: the default is **none** (fully tonal, let the photo carry it); only add one if they want it (pumpkin, cornflower, plum, canary, sand, emerald). *Asked every run.*
 
 The agent drafts the archetype pick(s) + the line(s) in the Build Master's voice and **shows
 them**. → **Gate 1: yes on the copy + plan before anything renders.**
 
 ### Phase 2 · Preview → iterate  · **Gate 2**
-The agent builds the chosen archetypes as boards on the Paper canvas — either by duplicating the
-pre-built boards in the "Build & Brew Kit" master file (Mode A) or by writing the archetype HTML
-into a fresh file (Mode B; see `AGENT.md`). The agent sets each board's photo from the Desktop folder
+The agent builds the chosen archetypes as boards on the Paper canvas. The primary path is Mode A: the
+Build Master duplicates the "Build & Brew Kit" master template and the agent builds on the pre-built slot
+boards. Mode B (the agent writes the archetype HTML into a fresh blank file; see `AGENT.md`) is the
+fallback for anyone who cannot access the shared template. The agent sets each board's photo from the Desktop folder
 (via `paper-asset://`, Full Disk Access on; drag as the fallback), fills copy, applies the chosen ground + accent, and
 puts the **caption + tags as a text board beside the slides** so the whole post is in one place. The Build Master reacts and steers
 (swap a photo, change a line, try another accent) and the agent makes the change. The agent designs;
@@ -99,5 +99,5 @@ the HTML is corrected up to it.
 1. Put a few event photos in `~/Desktop/build-brew-<city>/` (or reuse `EXAMPLES/_test-photos/`).
 2. Start a fresh session in the repo, hand the agent `AGENT.md`.
 3. Watch that it **asks Phase 1 before rendering** (Gate 1), **previews before exporting**
-   (Gate 2), asks ground + accent (no default), and surfaces the caption on the canvas.
+   (Gate 2), asks ground + accent (accent defaults to none), and surfaces the caption on the canvas.
 4. Anything it skips or trips on is the next fix.
