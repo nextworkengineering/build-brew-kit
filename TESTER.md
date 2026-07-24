@@ -12,7 +12,7 @@ whole thing.
 ## Set up Paper first (once, ~2 minutes)
 Do all four, in order. Skipping one is the usual reason a run stalls:
 1. **Open the Paper desktop app** (the Mac app, not the website) and leave it open. The agent works through it, so it has to be running.
-2. **Make a new blank Paper file** for your post and note its name.
+2. **Duplicate the kit's Paper file** to your own Paper: open [Build & Brew Kit](https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T/1-0) > **File > Duplicate**, and work on your copy (it already has the fonts + templates). No access yet? A new blank file works too.
 3. **Give Paper Full Disk Access:** System Settings > Privacy & Security > Full Disk Access > switch on **Paper** > quit and reopen Paper. This is what lets the agent use your photos. Skip it and photo import just hangs.
 4. **Make a Desktop folder** with your photos (or use the samples in `EXAMPLES/_test-photos/`).
 

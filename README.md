@@ -30,7 +30,7 @@ Your AI agent does the design. You talk, you approve, it builds. There is a one-
 ### Step 1 — set up Paper (once, about 2 minutes)
 Do all four, in order. Skipping any one of them is the usual reason a run stalls.
 1. **Open the Paper desktop app** (the Mac app, not the website) and leave it open. Your agent works through this app, so it has to be running.
-2. **Make a new blank Paper file** for your post, and remember what you named it. Your agent builds there.
+2. **Duplicate the kit's Paper file to your own Paper.** Open [Build & Brew Kit](https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T/1-0) > **File > Duplicate**. Your copy already has the NextWork fonts, colours, and every template, so your posts stay on-brand. Build on your copy, never on the shared original. (No access yet? A new blank file works too, your agent will still build it.)
 3. **Give Paper Full Disk Access:** System Settings > Privacy & Security > Full Disk Access > switch on **Paper** > quit and reopen Paper. This is the step that lets the agent use your photos. Skip it and photo import just hangs with no error.
 4. **Make a folder on your Desktop** and drop your event photos into it.
 
@@ -41,6 +41,15 @@ Do all four, in order. Skipping any one of them is the usual reason a run stalls
 3. It asks about the night, shows you a plan to approve (Gate 1), builds it on the **Paper canvas** for you to react to (Gate 2), then exports it. You never touch a design tool.
 
 **No photos (virtual event)?** Use the text-only archetype (F), or a screenshot of what a member built as the photo in D. See `AGENT.md`.
+
+## The kit's Paper file
+
+Everything visual lives in one Paper file: the guide, every template, and a finished worked example.
+
+👉 **[Build & Brew Kit (Paper)](https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T/1-0)** — open it, then **File > Duplicate** to make your own copy, and build there. Duplicating (not starting blank) means your copy carries the fonts, colour tokens, and every template board, so it stays on-brand.
+
+- **START HERE** page: the guide + the kit of parts (every template).
+- **Output · Dallas** page: a finished worked example to copy the look from.
 
 ## The ask (optional, but it's the flywheel)
 
