@@ -29,7 +29,7 @@ posed line-up.
 ## How it was built
 On the Paper canvas, from these archetype picks and photos:
 - **Single post** — Build Master story archetype, from `talk-warm.jpg`. Claim "Nobody watched a demo." / "45 people built one."
-- **Carousel** — D cover (`group-dusk.jpg`, "One night. Six ships.") → two G moments (`build-table.jpg` 7:30 "Paired up. Heads down."; `coding-screen.jpg` 9:00 "First demos. Real code, real nerves.") → numbers (45 builders / 6 projects / 1 night) → D invite (`cafe-lounge.jpg`, "Come build the next one.").
+- **Carousel** — D cover (`group-dusk.jpg`, "One night. Six ships.") → two G moments (`build-table.jpg` 7:30 "Paired up. Heads down."; `coding-screen.jpg` 9:00 "First demos. Real code, real nerves.") → D invite (`cafe-lounge.jpg`, "Come build the next one.").
 
 Then exported from Paper: the Instagram images in order, and one LinkedIn PDF (5 pages, 1080×1350).
 

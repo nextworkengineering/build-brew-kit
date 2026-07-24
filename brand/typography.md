@@ -3,7 +3,7 @@
 One font, three rules. That's the whole system.
 
 - **Everything is Inter.** Headlines, body, captions, labels, the CTA. No serif, no second family.
-- **Hierarchy comes from size and weight, not a second typeface.** Display moments (a headline, the big word in A, the timestamp in G, a cover title) are Inter Medium 500 at a large size, elegant not heavy. Body and labels are Inter 400 / 500.
+- **Hierarchy comes from size and weight, not a second typeface.** Display moments (a headline, the timestamp in G, a cover title) are Inter Medium 500 at a large size, elegant not heavy. Body and labels are Inter 400 / 500.
 
 ## Rules
 1. One family only. Inter everywhere.
