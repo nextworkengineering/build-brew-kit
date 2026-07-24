@@ -2,18 +2,18 @@
 
 Two fonts, three rules. That's the whole system.
 
-- **Headline:** Suisse Neue. This is the only place a display font appears.
-- **Everything else:** FK Grotesk Neue. Body, captions, labels, the CTA.
+- **Headline:** Instrument Serif. This is the only place a display font appears.
+- **Everything else:** Inter. Body, captions, labels, the CTA.
 
 ## Rules
 1. Never mix the two fonts inside one element.
 2. Caption and UI text use `letter-spacing: 0`, even when uppercase. Only large display headlines carry tracking.
 3. Keep one line of text per photo. If you need a paragraph, it's a different post.
 
-## Fonts you don't have (that's fine)
-Most Build Masters won't have the licensed NextWork fonts, and that's okay. Fall back to `system-ui` and the post still works. The photos carry the brand far more than the exact typeface does.
+## Free fonts, loaded for you
+Instrument Serif and Inter are both free, open-licensed fonts, so the kit can ship them. The templates load them from Google Fonts, so the post looks right on any machine with no font install. If a render context blocks web fonts they fall back to `system-ui` / a system serif and the post still works. The photos carry the brand far more than the exact typeface does.
 
 ```css
---font-heading: 'Suisse Neue', system-ui, sans-serif;
---font-body: 'FK Grotesk Neue', system-ui, sans-serif;
+--font-heading: 'Instrument Serif', Georgia, serif;
+--font-body: 'Inter', system-ui, sans-serif;
 ```

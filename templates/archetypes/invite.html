@@ -3,16 +3,17 @@
   ARCHETYPE Invite · Full-bleed scrim closer  (the carousel closer; mirrors master board "Carousel · Invite")
   Full-bleed photo + a bottom-weighted scrim + the invite (kicker, title, body, CTA arrow) bottom-left. One mark.
   Slots: {{PHOTO}} {{KICKER}} {{TITLE}} {{BODY}}
-  1080x1350. FK Grotesk throughout; text sits directly on the photo, no card. Inside the kit's rules: one mark,
+  1080x1350. Inter throughout; text sits directly on the photo, no card. Inside the kit's rules: one mark,
   no glass panel, token colours only (title cream, body sand).
   Photo enters via paper-asset:// once Paper has Full Disk Access (Phase 0); the agent sets this fill.
 -->
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Instrument+Serif&display=swap');
   :root{ --ink:#1b1918; --cream:#f8f5f1; --sand:#e5dcc7; }
   *{margin:0;box-sizing:border-box}
   html,body{width:1080px;height:1350px}
   .frame{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--ink);
-    font-family:"FK Grotesk Neue",system-ui,-apple-system,sans-serif}
+    font-family:"Inter",system-ui,-apple-system,sans-serif}
   .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;
     filter:brightness(.82) contrast(1.05) saturate(.90)}
   /* Bottom-weighted scrim: faces stay lit up top, text reads over the darker lower third. */

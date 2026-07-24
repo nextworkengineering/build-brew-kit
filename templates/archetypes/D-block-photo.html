@@ -1,18 +1,20 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <!--
-  ARCHETYPE D · Block + photo  (the poster)
-  Use for: a punchy claim. Clean photo up top, solid paper block below carries a bold grotesk line.
+  ARCHETYPE D · Block + photo  (the poster / landscape-safe)
+  Use for: a punchy claim. Also the go-to for a landscape / wide photo (single post or carousel slide):
+  the photo sits in the band and the text lives in the block, so it works every time.
   Slots: {{PHOTO}} {{KICKER}} {{H1}} {{H2}} {{BODY}} {{CTA}}
-  1080x1350. Grotesk-forward. FK Grotesk Neue (headline uses the Black weight).
+  1080x1350. Grotesk-forward. Inter (headline uses the Black 900 weight).
   Group-safe: the photo band shows more of the room than a full-bleed. Very wide group? object-fit:contain the photo on the ground so nobody is cut.
 -->
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Instrument+Serif&display=swap');
   :root{ --paper:#f8f5f1; --ink:#1b1918; --muted:#6c615c; --body:#6c615c;
     --ground:var(--paper); --fg:var(--ink); --fg-muted:var(--body); }
   *{margin:0;box-sizing:border-box}
   html,body{width:1080px;height:1350px}
   .frame{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--ground);
-    display:flex;flex-direction:column;font-family:"FK Grotesk Neue",system-ui,-apple-system,sans-serif}
+    display:flex;flex-direction:column;font-family:"Inter",system-ui,-apple-system,sans-serif}
   .photo{width:1080px;height:812px;object-fit:cover;object-position:50% 42%;
     filter:brightness(.96) contrast(1.05) saturate(.93)}
   .block{flex:1;padding:64px 72px 60px;display:flex;flex-direction:column;justify-content:space-between}

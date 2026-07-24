@@ -3,16 +3,17 @@
   ARCHETYPE F · Narrative text  (the two-tone statement)
   Use for: a text-only story beat, no photo. Claim in cream, the follow-up muted. Builders-not-talkers.
   Slots: {{CLAIM}} {{CONTEXT}} {{HANDLE}} {{SERIES}}
-  1080x1350. FK Grotesk Neue Black. Two-tone = emphasis without shouting.
+  1080x1350. Inter Black (900). Two-tone = emphasis without shouting.
 -->
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Instrument+Serif&display=swap');
   :root{ --ink:#1b1918; --cream:#f8f5f1; --muted:#6c615c;
     --ground:var(--ink); --fg:var(--cream); --fg-muted:var(--muted); }
   *{margin:0;box-sizing:border-box}
   html,body{width:1080px;height:1350px}
   .frame{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--ground);
     display:flex;flex-direction:column;justify-content:space-between;padding:80px;
-    font-family:"FK Grotesk Neue",system-ui,-apple-system,sans-serif}
+    font-family:"Inter",system-ui,-apple-system,sans-serif}
   .mark{width:44px;height:44px}
   .mark svg path{fill:var(--fg)}
   .statement div{font-weight:900;font-size:80px;line-height:80px;letter-spacing:-.02em}

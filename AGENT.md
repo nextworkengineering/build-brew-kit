@@ -70,7 +70,7 @@ A smart friend who has already figured out what you are struggling with. Confide
 == THE KIT OF PARTS (pick the archetype that fits the moment) ==
 Each is a ready board in the Paper file (design source in templates/archetypes/). Choose by the photo and the job:
 - A · photo + serif (contain)  (A-photo-contain.html) - one photo shown whole on a paper ground (never cropped), a serif line + one big word below it. The default single post. Group- and landscape-safe by default. A tall portrait photo floats small here; for a portrait that suits a full frame you can cover-crop it, but never cover-crop a wide group.
-- D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a bold grotesk claim below. A punchy poster. Good for bright, empty-topped photos, and group-safe: the photo band + block keep the whole crew visible.
+- D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a bold grotesk claim below. A punchy poster, and the go-to for a LANDSCAPE / wide photo (single post or carousel slide): the photo sits in the band and the text lives in the block below, so it works every time and the text never fights the image. Group-safe: the photo band + block keep the whole crew visible.
 - F · narrative text  (F-narrative-text.html) - no photo. One two-tone statement (claim bright, follow-up muted). A story beat or a hot take.
 - G · timestamp moment  (G-timestamp.html) - a photo with one centered time + one line. String them in order to tell the night (6:00 doors -> 7:30 paired up -> 9:00 demos). The carousel spine.
 - Build Master story  (individual-build-master.html) - names YOU + your event, told first person, two-tone. A single post that sells the event by telling how you built something real.
@@ -96,11 +96,11 @@ Ground / mode: ask light or dark. Light = paper #f8f5f1 (never pure white); dark
 Accent: the default is none (fully tonal). The event photos are the hero, so ask every time and only add an accent when they want one; a big saturated block reads as slop, so "none" is always the right default. If they do want a small pop, keep it a highlight on type, never a filled block: prefer emerald (the signature green) or a warm tonal highlight. Options: pumpkin #fa8a45, cornflower #308ded, plum #875bf7, canary #ffdd2d, sand #e5dcc7, emerald #11cca6. On a warm graded photo prefer a warm accent (pumpkin, canary, sand); cornflower and plum are cold and clash with the warm grade, so keep them for cool or screenshot posts.
 
 == TYPE ==
-Display serif = Suisse Neue (the accent word in A, the timestamp in G). Everything else, and every bold grotesk headline, = FK Grotesk Neue. The templates already set these with safe fallbacks. Never mix the two in one line. Labels: letter-spacing 0.
+Display serif = Instrument Serif (the accent word in A, the timestamp in G). Everything else, and every bold grotesk headline, = Inter. Both are free / open fonts, loaded from Google Fonts in the templates, with safe fallbacks. Never mix the two in one line. Labels: letter-spacing 0.
 
 == PHOTOS ==
 iPhone photos are HEIC — convert to JPG before importing to Paper: sips -s format jpeg -Z 1600 IN.HEIC --out OUT.jpg (a one-line prep step, not a render pipeline). Warm/dim shots grade cinematic (great for A, G, Build Master story); bright, empty-topped shots suit D. The board applies the grade — one consistent cinematic treatment (see brand/grade.md; for magenta/RGB party lighting use the strong colored-lighting branch there) — do not pre-edit or use a heavy filter. Never the pixelated-photo look.
-Orientation: notice the photo's shape. A landscape or group photo -> contain it (archetype A default, or a 1:1 square) so no one is cropped. A portrait / vertical photo can fill the frame (cover). Never cover-crop a wide group shot — that silently drops learners.
+Orientation: notice the photo's shape. A LANDSCAPE / wide photo -> use archetype D (photo band + block, text below the photo): it works every time and the text never fights the image, on a single post or a carousel slide. A very wide GROUP shot -> contain it (archetype A, or a 1:1 square) so no one is cropped. A portrait / vertical photo can fill the frame (cover). Never cover-crop a wide group shot, that silently drops learners.
 Text placement: keep the headline and line in the BOTTOM THIRD of the frame. If type would fall over someone's face, nudge it down (rarely up) so faces stay legible. The human story is the point, so a face is never covered by text. The full-bleed boards carry a bottom-weighted scrim so the words read without hiding anyone.
 
 == GROUP SHOTS (keep the whole crew in frame) ==
@@ -163,7 +163,7 @@ Both modes converge on the same place-photo step: with Full Disk Access you set 
 ## BRAND-QA READ-BACK (run before every export, and again after any human canvas edit)
 Before you export — and any time the Build Master has edited the canvas themselves — read the board back and check it. Use `get_screenshot` for the crop and feel, `get_computed_styles` for fonts and colour, the tree for structure. If any check fails, fix it or flag it; never export on a fail.
 > **Screenshot outage.** `get_screenshot` is sometimes down and returns empty. A blank screenshot does NOT mean the board is broken. Verify structure and brand with `get_computed_styles` (fonts, ground, accent hexes) + the node tree, and ask the Build Master to eyeball the canvas — they can also leave comments on a board, which you read with the comment tools. Never "fix" a board because the screenshot failed, and never export on a blank screenshot alone.
-1. Fonts: the headline is Suisse Neue (the serif display); everything else is FK Grotesk Neue. No third font. Labels letter-spacing 0.
+1. Fonts: the headline is Instrument Serif (the serif display); everything else is Inter. No third font. Labels letter-spacing 0.
 2. Grade: the board's grade is applied and the photo still reads as the moment, not mush.
 3. Accent: exactly one, used as a small highlight, never a big saturated block. A warm accent on a warm photo (no cold cornflower or plum on a warm event photo).
 4. Faces: no one is cropped out — the whole crew is in frame.
@@ -173,13 +173,13 @@ Before you export — and any time the Build Master has edited the canvas themse
 Logo-removal test: with no mark, does it still feel like NextWork (warm, clean, real)?
 
 **Copy-paste QA prompt** (hand this back to the agent to run the read-back on demand):
-> Run the brand-QA read-back on the board(s): fonts (Suisse Neue headline, FK Grotesk Neue everything else, no third font), grade applied and the photo still reads, exactly one accent used as a small highlight (warm accent on a warm photo), no face cropped out, one line / one claim per photo in sentence case, ground never pure white or pure black, and it still reads at feed size. If `get_screenshot` is empty, verify with `get_computed_styles` + the tree and ask me to eyeball it. Flag or fix any fail; never export on a fail.
+> Run the brand-QA read-back on the board(s): fonts (Instrument Serif headline, Inter everything else, no third font), grade applied and the photo still reads, exactly one accent used as a small highlight (warm accent on a warm photo), no face cropped out, one line / one claim per photo in sentence case, ground never pure white or pure black, and it still reads at feed size. If `get_screenshot` is empty, verify with `get_computed_styles` + the tree and ask me to eyeball it. Flag or fix any fail; never export on a fail.
 
 **AI-slop tells — reject on sight.** The whole point of this kit is that a vibe-coded post does NOT look vibe-coded. NextWork's feel is premium, quiet, editorial. If you see any of these, it is not shippable, fix it before Gate 2:
 - A neon or lime green, or ANY colour that is not an exact brand token. The only green is emerald #11cca6 (a muted teal, never a bright lime). The full set: pumpkin #fa8a45, canary #ffdd2d, sand #e5dcc7, cornflower #308ded, plum #875bf7. A colour picked "because it pops" is the #1 tell.
 - A saturated colour fill or block. The accent is a small highlight on type, never a filled panel, bar, or big coloured shape.
 - Stock or outline icons (code brackets, lightbulb, target, heart, rocket). NextWork uses type and real photos, never clip-art. No icon sets, no icon+label rows.
-- A script, handwriting, or brush font, or an emoji baked into the design. TWO fonts only: Suisse Neue (serif display) and FK Grotesk Neue (everything else). No third font. No emoji in the artwork.
+- A script, handwriting, or brush font, or an emoji baked into the design. TWO fonts only: Instrument Serif (serif display) and Inter (everything else). No third font. No emoji in the artwork.
 - An infographic: a feature list or a stack of "icon + heading + subtext" rows crammed onto one slide. One line, one claim per slide. If you have five points, that is five slides or a caption, not one busy slide.
 - The logo more than once on a slide. One small mark.
 - Text dumped over a busy or dark photo with no clean anchor. If the photo is busy, use a block archetype (D) or a proper scrim, not cramped low-contrast text.
