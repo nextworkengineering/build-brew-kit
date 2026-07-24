@@ -24,8 +24,11 @@ Story-first, never output-first. Do NOT render or export until you've heard what
    4. Make a folder on your Desktop and put tonight's photos in it (e.g. ~/Desktop/build-brew-<city>/), then tell me the folder. iPhone photos are HEIC; I convert them to JPG for you (see PHOTOS).
    Before you place anything, say out loud which Paper file and page you are on and check it is the fresh one they named. If you are not certain, create a clearly-named new page ("Build & Brew, <city>") and use that. Never build on top of existing work. Look at the photos before you choose anything. With Full Disk Access on you place the photos yourself from their folder (see PHOTOS), no manual drag; if it truly can't be granted, fall back to asking them to drag the JPGs onto the canvas.
 
-1 · INTAKE — ask, then draft. A short conversation before any image:
-   - Single post or carousel? (Not sure? Have them tell you about the night, then you recommend.)
+1 · INTAKE — ask, then draft. A short conversation before any image. ASK THE FORMAT FIRST:
+   - Single post or carousel? ASK THIS FIRST, before you gather anything else, and get an answer. Single
+     post is the default and by far the cheapest (fewer agent calls and tokens); a carousel is several times
+     the work, so recommend single unless they specifically want the full swipe. (Not sure? Have them tell
+     you about the night, then you recommend, and recommend single by default.)
    - What happened? The arc — doors, pairing up, building, demos, the one human moment. Their words become the copy.
    - What did you build? The actual projects — the app, site, agent, or thing the group (or a standout person)
      shipped, not just how many. This is what the headline should name: "We built six working apps in a night"
@@ -34,15 +37,17 @@ Story-first, never output-first. Do NOT render or export until you've heard what
    - Who are you (Build Master name), event name, city.
    - The numbers — headcount, projects shipped, any "first ever."
    - Where are you posting — Instagram, LinkedIn, or both.
-   - The look — ground light (paper) or dark (leather)? Accent — pumpkin, cornflower, plum, canary, sand,
-     or none? Ask every time; there is no default.
+   - The look: ground light (paper) or dark (leather)? Accent: the default is none (fully tonal, let the
+     photo carry it). Only add an accent if they want one, and keep it a small highlight; options are pumpkin,
+     cornflower, plum, canary, sand, emerald. Ask every time; never assume an accent.
    Then draft the archetype pick(s) + the line(s) in their voice and SHOW them. When the night has a concrete
    build or a standout project, let the headline name it (that is the proof), not just the vibe.
    [GATE 1] Get a yes on the copy and the plan before you build anything.
 
 2 · PREVIEW — you build it on the canvas, they react. In the "Build & Brew Kit" Paper file YOU build
    the chosen archetypes as boards: fill photo + copy, apply their ground + accent, and put the caption + tags
-   as a text board beside the slides so the whole post lives in one place. They are not designing — they
+   as ONE single selectable text block beside the slides (one clean copy-paste, formatting intact, never split
+   into separate nodes) so the whole post lives in one place. They are not designing — they
    react. Let them steer (swap a photo, change a line, try another accent) and you make the change on the
    canvas. If they edit the canvas themselves, run the brand-QA read-back (see BRAND-QA) before moving on.
    THE MAGIC TRICK (do this before Gate 2): the kit gets them correct and clean, which is only the floor.
@@ -82,11 +87,13 @@ Virtual event, no photos? Use F (text only), or a screenshot of what a member bu
 5. Invite people to DO, not watch. "come build", "bring a friend".
 6. Numbers earn trust. Builders, projects, city.
 7. Sentence case. No letter-spacing on labels.
+8. No em dashes or en dashes in the copy or the caption. The characters "—" and "–" are banned; use a period, a comma, or the word "and" instead. Before Gate 1 and again before export, scan every board line and the caption and strip any that slipped in. A stray "—" is the clearest AI tell.
+9. The story is the hero, the clock is not. The outcome / what-you-built line is the largest text; a date or time is small supporting metadata, never the biggest thing on a single post. (The G timestamp slide in a carousel is the one exception: there the time is the point.)
 Story arc (single post or carousel): Hook -> Stakes -> Turn (you built it over coffee) -> Proof -> Invite.
 
 == GROUND, MODE & ACCENT (ask at intake — don't assume) ==
 Ground / mode: ask light or dark. Light = paper #f8f5f1 (never pure white); dark = leather/ink #1b1918 (never pure black). Text on light: ink #1b1918. Text over photos or on ink: cream #f8f5f1; muted second tone #6c615c.
-Accent: ask which one, or none. One per post, a small highlight — never a big saturated block. Options: pumpkin #fa8a45, cornflower #308ded, plum #875bf7, canary #ffdd2d, sand #e5dcc7, emerald #11cca6. There is no standing default — a big saturated block reads as slop, so "none" is always a good answer. On a warm graded photo prefer a warm accent (pumpkin, canary, sand); cornflower and plum are cold and clash with the warm grade, so keep them for cool or screenshot posts. Emerald is the signature green — a small highlight only.
+Accent: the default is none (fully tonal). The event photos are the hero, so ask every time and only add an accent when they want one; a big saturated block reads as slop, so "none" is always the right default. If they do want a small pop, keep it a highlight on type, never a filled block: prefer emerald (the signature green) or a warm tonal highlight. Options: pumpkin #fa8a45, cornflower #308ded, plum #875bf7, canary #ffdd2d, sand #e5dcc7, emerald #11cca6. On a warm graded photo prefer a warm accent (pumpkin, canary, sand); cornflower and plum are cold and clash with the warm grade, so keep them for cool or screenshot posts.
 
 == TYPE ==
 Display serif = Suisse Neue (the accent word in A, the timestamp in G). Everything else, and every bold grotesk headline, = FK Grotesk Neue. The templates already set these with safe fallbacks. Never mix the two in one line. Labels: letter-spacing 0.
@@ -94,6 +101,7 @@ Display serif = Suisse Neue (the accent word in A, the timestamp in G). Everythi
 == PHOTOS ==
 iPhone photos are HEIC — convert to JPG before importing to Paper: sips -s format jpeg -Z 1600 IN.HEIC --out OUT.jpg (a one-line prep step, not a render pipeline). Warm/dim shots grade cinematic (great for A, G, Build Master story); bright, empty-topped shots suit D. The board applies the grade — one consistent cinematic treatment (see brand/grade.md; for magenta/RGB party lighting use the strong colored-lighting branch there) — do not pre-edit or use a heavy filter. Never the pixelated-photo look.
 Orientation: notice the photo's shape. A landscape or group photo -> contain it (archetype A default, or a 1:1 square) so no one is cropped. A portrait / vertical photo can fill the frame (cover). Never cover-crop a wide group shot — that silently drops learners.
+Text placement: keep the headline and line in the BOTTOM THIRD of the frame. If type would fall over someone's face, nudge it down (rarely up) so faces stay legible. The human story is the point, so a face is never covered by text. The full-bleed boards carry a bottom-weighted scrim so the words read without hiding anyone.
 
 == GROUP SHOTS (keep the whole crew in frame) ==
 Event photos are often wide group shots, and cover-cropping one into a 4:5 frame cuts the people at the edges. Archetype A (contain) and D both show the whole photo; never silently cover-crop a group. When the photo is a group:
@@ -108,9 +116,10 @@ Export from the Paper file for where they said they're posting:
 - Instagram, carousel -> each board as its own 1080x1350 image, in swipe order (01, 02, ...).
 - LinkedIn, carousel -> one PDF, one board per page (LinkedIn shows a PDF as a swipeable document).
 Always sRGB. If they don't say where: single -> one image; multi-slide -> ask Instagram vs LinkedIn.
+Name the files for the event, never a generic default. Slug them build-and-brew-<city>-<date>: e.g. build-and-brew-austin-2026-07-22-01.png, -02.png, ... for a carousel, and build-and-brew-austin-2026-07-22.pdf for the LinkedIn PDF. Never leave them as "combined" or an unnamed default; clean, contextual names are both file hygiene and brand.
 
 == NEVER ==
-Build a board before you've heard the story and shown a plan (Gate 1). Build on whatever Paper canvas happens to be active instead of confirming the file + page and using a fresh, clearly-named one (you can silently destroy their existing work). Export before they've seen and approved the visuals (Gate 2). Reaching for a local renderer (Playwright, ImageMagick, Pillow) or hand-designing outside Paper — everything is built on the Paper canvas. A standing default accent instead of asking. Pure white or pure black grounds. More than one accent per post. A heavy filter that hides the moment. Text over a face. Corporate hype words. A paragraph where one line belongs. The pixelated-photo look. A neon or off-brand green, or any colour that is not an exact brand token (the only green is emerald #11cca6). A saturated colour block. Stock or outline icons, icon+label rows, or an infographic feature-list. A script or handwriting font, or an emoji in the artwork. The logo more than once per slide. Drop shadows, bevels, glows, or decorative gradients. (These are the AI-slop tells the QA read-back rejects.)
+Build a board before you've heard the story and shown a plan (Gate 1). Build on whatever Paper canvas happens to be active instead of confirming the file + page and using a fresh, clearly-named one (you can silently destroy their existing work). Export before they've seen and approved the visuals (Gate 2). Build anything before you have asked and heard single post vs carousel (ask the format first). Reaching for a local renderer (Playwright, ImageMagick, Pillow) or hand-designing outside Paper — everything is built on the Paper canvas; even if you find a render or export script on disk (a render.sh, an export.sh), ignore it, there is no local pipeline. A standing default accent instead of none (the default is none; ask before you add one). Pure white or pure black grounds. More than one accent per post. A heavy filter that hides the moment. Text over a face (keep type in the bottom third, off faces). An em dash or en dash (—, –) in any copy or caption. Corporate hype words. A paragraph where one line belongs. The pixelated-photo look. A neon or off-brand green, or any colour that is not an exact brand token (the only green is emerald #11cca6). A saturated colour block. Stock or outline icons, icon+label rows, or an infographic feature-list. A script or handwriting font, or an emoji in the artwork. The logo more than once per slide. Drop shadows, bevels, glows, or decorative gradients. (These are the AI-slop tells the QA read-back rejects.)
 
 == FILL-IN TEMPLATE (fill it FROM the intake, then confirm at Gate 1) ==
 What happened: [their story of the night, in their words — this is where the copy comes from]
@@ -141,7 +150,7 @@ Fallbacks, only if Full Disk Access can't be granted:
 - **Mode A · master file (duplicate).** Default. Have them open the shared kit file (https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T) and **Duplicate it to their own Paper** first, so their copy carries the brand tokens + fonts + pre-built boards; you work in their copy. (file id `01KY2G5V12Q1BBPY7GC8PRSY1T`) `open_file` it → `duplicate_nodes` the board you picked into a working area → set the Photo frame's fill to the local photo via `paper-asset://` (Full Disk Access on; drag only as a fallback) → `set_text_content` for the copy → apply ground + accent via the board tokens (`set_tokens` / `update_styles`) → `finish_working_on_nodes`. The carousel **Cover and Invite are full-bleed scrim boards that live only in the master — duplicate them; do NOT rebuild the cover as archetype A.**
 - **Mode B · fresh file (from HTML).** When there's no shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same place-photo / fill / copy / token / finish path. A, D, F, G, Build Master, Cover, and Invite all ship as HTML now, so you can build a full carousel in Mode B too.
 
-Both modes converge on the same place-photo step: with Full Disk Access you set each board's fill from their folder yourself, and drag is only the fallback. Place a caption + tags text board beside the slides so the whole post lives in one place.
+Both modes converge on the same place-photo step: with Full Disk Access you set each board's fill from their folder yourself, and drag is only the fallback. Place the caption + tags as one single selectable text block beside the slides (one clean copy-paste, formatting intact) so the whole post lives in one place; keep that caption block OUT of the exported assets.
 
 > Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, build-master, F).
 
@@ -179,4 +188,4 @@ Logo-removal test: with no mark, does it still feel like NextWork (warm, clean, 
 **The bar.** The quiet slide wins. One line of serif on warm paper, one small mark, nothing else, is the NextWork bar (the "What will you learn next?" slide is exactly this). If a slide feels louder, busier, or more colourful than that, it is drifting to slop. Premium is restraint: space, one idea, a real photo or big type, at most one tiny accent. When in doubt, remove something.
 
 ## The caption + tags
-The caption (the post's text field) and who you tag are what make it travel. See `templates/caption-and-tags.md`. Always tag the people in the photos.
+The caption (the post's text field) and who you tag are what make it travel. See `templates/caption-and-tags.md`. Always tag the people in the photos. Render the caption as ONE single text block on the canvas so the Build Master copies it in one action and the formatting survives the paste; it is a reference board, never a slide, so keep it out of the export.

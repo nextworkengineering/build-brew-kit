@@ -17,3 +17,5 @@ NextWork sounds like a smart friend who's already figured out what you're strugg
 | Austin, round two | Introducing: Build & Brew ATX |
 
 Keep it to one line. Lowercase or sentence case. Let the photo do the talking.
+
+No em dashes or en dashes ("—", "–") in a caption or a line. Use a period, a comma, or "and". A stray em dash is the loudest AI tell, so scan the caption and every board line before you post and strip any.
