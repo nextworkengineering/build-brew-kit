@@ -8,7 +8,7 @@ Brand snapshot from the NextWork kernel. v0.3: story-first workflow + growth-loo
 - `WORKFLOW.md` - the canonical Build Master run (Phase 0-4, the two gates, Paper-only agent-driven) - the human-readable process
 - `start-your-own-build-and-brew.md` - the host on-ramp: the whole event format on one page, the top of the growth loop
 - `magic_trick.md` - the human-adds-memorable guardrail, now wired into Phase 2 (Gate 2) of the workflow
-- `templates/archetypes/` - six post archetypes (A / D / F / G / numbers / build-master) + README; the HTML is the Paper design source (local render/export scripts archived to `_internal/`)
+- `templates/archetypes/` - five post archetypes (A / D / F / G / build-master) + README; the HTML is the Paper design source (local render/export scripts archived to `_internal/`)
 - `templates/caption-and-tags.md` - the caption + tags, plus NextWork credit / viewer on-ramp / trackable-link conventions (the growth loop)
 - `brand/` - colors, typography, voice, grade (agent-readable; hexes match the templates exactly)
 - `free-paper-path/` - free-tier Paper guidance

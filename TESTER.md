@@ -7,22 +7,25 @@ whole thing.
 
 ## What you need
 - The kit: `git clone https://github.com/nextworkengineering/build-brew-kit.git` (or unzip, if Jon sent a zip).
-- An AI agent (Claude Code or Cursor) with the **Paper MCP connected**. That's the one requirement, because
-  the agent builds everything on the Paper canvas. There is nothing else to install.
+- An AI agent (Claude Code or Cursor) with the **Paper MCP connected**.
+
+## Set up Paper first (once, ~2 minutes)
+Do all four, in order. Skipping one is the usual reason a run stalls:
+1. **Open the Paper desktop app** (the Mac app, not the website) and leave it open. The agent works through it, so it has to be running.
+2. **Make a new blank Paper file** for your post and note its name.
+3. **Give Paper Full Disk Access:** System Settings > Privacy & Security > Full Disk Access > switch on **Paper** > quit and reopen Paper. This is what lets the agent use your photos. Skip it and photo import just hangs.
+4. **Make a Desktop folder** with your photos (or use the samples in `EXAMPLES/_test-photos/`).
 
 ## Run it
 1. Open the kit in Claude Code or Cursor.
-2. Paste this:
+2. Paste this (fill in the file you named):
 
    > Read AGENT.md and follow it. My Build & Brew photos are in `EXAMPLES/_test-photos` (or point it
-   > at your own folder). Make me a single post and a short carousel about the night.
+   > at your own folder), and I opened a blank Paper file called '<name>'. Make me a single post about the night.
 
 3. It will ask you a few things about the night, show you a plan (Gate 1), then build the post on the
-   Paper canvas for you to react to (Gate 2), and export it.
-
-**One thing you do by hand: the photos.** Paper runs in the cloud, so the agent can't pull images off
-your Mac. When it's ready to place a photo it'll ask you to **drag the JPGs onto the Paper file** — do
-that once and it takes over. (Phone photos are HEIC; the agent converts them to JPG first.)
+   Paper canvas for you to react to (Gate 2), and export it. With Full Disk Access on, it places your
+   photos for you, no dragging. (Phone photos are HEIC; the agent converts them to JPG first.)
 
 **On a free Paper account?** There's a weekly limit on how much the agent can do in Paper, so a full
 carousel may not fit — start with a single post.

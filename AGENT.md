@@ -16,12 +16,13 @@ The Build Master is the hero of every post. This is their personal brand: proof 
 == HOW THIS RUNS (the workflow — do these in order) ==
 Story-first, never output-first. Do NOT render or export until you've heard what happened and shown a plan.
 
-0 · SETUP. Ask them to make a folder on their Desktop and drop the night's photos in
-   (e.g. ~/Desktop/build-brew-austin/). Have them point you at it. Look at the photos before you choose anything.
-   You can READ their folder, but the Paper canvas renders in the cloud and cannot reach their disk — so you
-   cannot push a photo onto a board yourself. When you build (Phase 2), ask them to DRAG the chosen photos
-   onto the Paper file; you then set each board's photo from the image they dragged in. Convert HEIC to JPG
-   first (see PHOTOS) — Paper can't read HEIC.
+0 · SETUP (do this FIRST. Assume zero technical skill. Post the whole checklist up front as one block, then walk them through it and CONFIRM each item is actually done before you build. Never assume any of it is true.)
+   Tell them, in plain words:
+   1. Open the Paper DESKTOP app (the Mac app, not the website) and leave it open. I work through that app, so it has to be running. "Nothing to install" does not mean "nothing to open."
+   2. In Paper, make a new blank file for tonight's post and tell me what you named it. We build there, on a fresh named page, never on top of anything you already have open.
+   3. Turn on Full Disk Access for Paper: System Settings > Privacy & Security > Full Disk Access > switch on Paper > quit and reopen Paper. This is the one step that lets me use your photos. Skip it and photo import just hangs with no error (the most common reason a run dies).
+   4. Make a folder on your Desktop and put tonight's photos in it (e.g. ~/Desktop/build-brew-<city>/), then tell me the folder. iPhone photos are HEIC; I convert them to JPG for you (see PHOTOS).
+   Before you place anything, say out loud which Paper file and page you are on and check it is the fresh one they named. If you are not certain, create a clearly-named new page ("Build & Brew, <city>") and use that. Never build on top of existing work. Look at the photos before you choose anything. With Full Disk Access on you place the photos yourself from their folder (see PHOTOS), no manual drag; if it truly can't be granted, fall back to asking them to drag the JPGs onto the canvas.
 
 1 · INTAKE — ask, then draft. A short conversation before any image:
    - Single post or carousel? (Not sure? Have them tell you about the night, then you recommend.)
@@ -67,17 +68,16 @@ Each is a ready board in the Paper file (design source in templates/archetypes/)
 - D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a bold grotesk claim below. A punchy poster. Good for bright, empty-topped photos, and group-safe: the photo band + block keep the whole crew visible.
 - F · narrative text  (F-narrative-text.html) - no photo. One two-tone statement (claim bright, follow-up muted). A story beat or a hot take.
 - G · timestamp moment  (G-timestamp.html) - a photo with one centered time + one line. String them in order to tell the night (6:00 doors -> 7:30 paired up -> 9:00 demos). The carousel spine.
-- Numbers  (numbers.html) - big stats on leather (45 builders / 6 projects / 1 night). The proof slide.
 - Build Master story  (individual-build-master.html) - names YOU + your event, told first person, two-tone. A single post that sells the event by telling how you built something real.
 
 SINGLE POST (default, lowest effort): one of A / D / F / Build Master story. One share is a win.
-CAROUSEL: a full-bleed Cover board -> a few G timestamp moments -> Numbers -> a full-bleed Invite board. Keep the same look on every slide. The Cover and Invite are their own full-bleed scrim boards in the master file (duplicate them) — the cover is NOT archetype A.
+CAROUSEL: a full-bleed Cover board -> a few G timestamp moments -> a full-bleed Invite board. Keep the same look on every slide. The Cover and Invite are their own full-bleed scrim boards in the master file (duplicate them) — the cover is NOT archetype A.
 Virtual event, no photos? Use F (text only), or a screenshot of what a member built as the photo in D (the block carries the words, never put text over the UI).
 
 == COPY RULES (write like a builder, not a brochure) ==
-1. Lead with proof, not hype. Name what actually shipped.
+1. Lead with the outcome, not hype. Name what actually shipped, in 10 words or fewer, so it lands at a glance without reading the caption.
 2. Make it yours. First person, you ran it.
-3. One claim per slide. Let the photo or the number back it.
+3. One claim per slide. Let the photo or a screenshot back it.
 4. Show the room, not a logo. Real faces are the proof.
 5. Invite people to DO, not watch. "come build", "bring a friend".
 6. Numbers earn trust. Builders, projects, city.
@@ -110,13 +110,13 @@ Export from the Paper file for where they said they're posting:
 Always sRGB. If they don't say where: single -> one image; multi-slide -> ask Instagram vs LinkedIn.
 
 == NEVER ==
-Build a board before you've heard the story and shown a plan (Gate 1). Export before they've seen and approved the visuals (Gate 2). Reaching for a local renderer (Playwright, ImageMagick, Pillow) or hand-designing outside Paper — everything is built on the Paper canvas. A standing default accent instead of asking. Pure white or pure black grounds. More than one accent per post. A heavy filter that hides the moment. Text over a face. Corporate hype words. A paragraph where one line belongs. The pixelated-photo look. A neon or off-brand green, or any colour that is not an exact brand token (the only green is emerald #11cca6). A saturated colour block. Stock or outline icons, icon+label rows, or an infographic feature-list. A script or handwriting font, or an emoji in the artwork. The logo more than once per slide. Drop shadows, bevels, glows, or decorative gradients. (These are the AI-slop tells the QA read-back rejects.)
+Build a board before you've heard the story and shown a plan (Gate 1). Build on whatever Paper canvas happens to be active instead of confirming the file + page and using a fresh, clearly-named one (you can silently destroy their existing work). Export before they've seen and approved the visuals (Gate 2). Reaching for a local renderer (Playwright, ImageMagick, Pillow) or hand-designing outside Paper — everything is built on the Paper canvas. A standing default accent instead of asking. Pure white or pure black grounds. More than one accent per post. A heavy filter that hides the moment. Text over a face. Corporate hype words. A paragraph where one line belongs. The pixelated-photo look. A neon or off-brand green, or any colour that is not an exact brand token (the only green is emerald #11cca6). A saturated colour block. Stock or outline icons, icon+label rows, or an infographic feature-list. A script or handwriting font, or an emoji in the artwork. The logo more than once per slide. Drop shadows, bevels, glows, or decorative gradients. (These are the AI-slop tells the QA read-back rejects.)
 
 == FILL-IN TEMPLATE (fill it FROM the intake, then confirm at Gate 1) ==
 What happened: [their story of the night, in their words — this is where the copy comes from]
 What they built: [the actual projects / things shipped — names the headline can use, plus any standout or first-ever]
 Format: [single post OR carousel]
-Archetype(s): [A / D / F / G / numbers / build-master]
+Archetype(s): [A / D / F / G / build-master]
 Photos: [Desktop folder or list]
 The line(s): [one short line per slide, in the Build Master's own voice]
 Ground: [light (paper) OR dark (leather)]
@@ -131,15 +131,19 @@ Caption + tags: [draft from templates/caption-and-tags.md — the post's text fi
 
 **One surface: the Paper canvas.** You build every post on the Paper canvas and export from Paper. There is no local renderer — no Playwright, no ImageMagick, no Pillow, nothing to install. This assumes the Paper MCP is connected (the NextWork setup). If it isn't, say so and stop; do not improvise a local pipeline.
 
-**Photos come from a human drag.** Paper renders server-side, so you cannot inject a local photo — no file paths, no base64 (a data-URI fill renders empty). Before you place any photo, ask the Build Master to DRAG the JPGs onto the Paper file. You then set each board's Photo frame fill from the image they dragged in. That is the one manual step; everything else is yours.
+**Photos: place them yourself with `paper-asset://` (needs Full Disk Access).** Once the Paper desktop app has Full Disk Access (Phase 0), you place local photos directly, no manual drag. Set a board's photo to the absolute local path: `background-image: url(paper-asset:///Users/you/Desktop/build-brew-<city>/photo.jpg)` (or an `<img src="paper-asset:///…">`), sized to the slot with explicit px `width`/`height` + `background-size: cover` (or `contain` to keep a whole group). Read the actual pixels with `get_fill_image` any time to confirm the crop and framing.
+
+Fallbacks, only if Full Disk Access can't be granted:
+- Have the Build Master DRAG the JPGs onto the Paper file once; each lands as a node with a hosted `file-assets` URL you read with `get_fill_image` and reuse across every slide.
+- A base64 data-URI fill also renders but is heavy; use only as a last resort.
 
 **Two build modes** — pick by whether the Build Master has the shared master file.
-- **Mode A · master file (duplicate).** Default when they have the "Build & Brew Kit" master (file id `01KY2G5V12Q1BBPY7GC8PRSY1T`); its archetype boards are pre-built. `open_file` it → `duplicate_nodes` the board you picked into a working area → have them drag the photo → set the Photo frame's fill from the dragged image → `set_text_content` for the copy → apply ground + accent via the board tokens (`set_tokens` / `update_styles`) → `finish_working_on_nodes`. The carousel **Cover and Invite are full-bleed scrim boards that live only in the master — duplicate them; do NOT rebuild the cover as archetype A.**
-- **Mode B · fresh file (from HTML).** When there's no shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same drag / fill / copy / token / finish path. A, D, F, G, numbers, and Build Master have HTML; the Cover and Invite are master-only for now, so build a full carousel in Mode A until their HTML ships.
+- **Mode A · master file (duplicate).** Default when they have the "Build & Brew Kit" master (file id `01KY2G5V12Q1BBPY7GC8PRSY1T`); its archetype boards are pre-built. `open_file` it → `duplicate_nodes` the board you picked into a working area → set the Photo frame's fill to the local photo via `paper-asset://` (Full Disk Access on; drag only as a fallback) → `set_text_content` for the copy → apply ground + accent via the board tokens (`set_tokens` / `update_styles`) → `finish_working_on_nodes`. The carousel **Cover and Invite are full-bleed scrim boards that live only in the master — duplicate them; do NOT rebuild the cover as archetype A.**
+- **Mode B · fresh file (from HTML).** When there's no shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same place-photo / fill / copy / token / finish path. A, D, F, G, Build Master, Cover, and Invite all ship as HTML now, so you can build a full carousel in Mode B too.
 
-Both modes converge at the drag: the human supplies the pixels, you do the rest. Place a caption + tags text board beside the slides so the whole post lives in one place.
+Both modes converge on the same place-photo step: with Full Disk Access you set each board's fill from their folder yourself, and drag is only the fallback. Place a caption + tags text board beside the slides so the whole post lives in one place.
 
-> Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, numbers, build-master, F).
+> Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, build-master, F).
 
 **Free Paper caveat.** Free Paper accounts have a weekly MCP-call cap; a full carousel may not fit. On free tier, prefer a single post, or use a paid account for carousels. See `free-paper-path/`.
 

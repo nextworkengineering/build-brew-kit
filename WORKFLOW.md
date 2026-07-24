@@ -26,9 +26,9 @@ The Build Master makes a folder on their Desktop and drops the night's photos in
 ```
 They point the agent at it. The agent looks at the photos before choosing anything — archetype
 picks are a lighting decision (warm/dim → cinematic A/G; bright/celebratory → D invite). Convert
-HEIC to JPG first (Paper can't read HEIC). Note: the agent can read the folder, but Paper renders
-in the cloud, so during Phase 2 the Build Master **drags** the chosen photos onto the Paper file —
-the agent can't push local images onto the canvas itself.
+HEIC to JPG first (Paper can't read HEIC). With the Paper desktop app open and granted Full Disk
+Access (Phase 0), the agent places the photos itself via `paper-asset://`, no manual drag. If Full
+Disk Access can't be granted, the Build Master drags the photos onto the file as a fallback.
 
 ### Phase 1 · Intake → draft  · **Gate 1**
 A short conversation *before any image is made*. The agent asks:
@@ -49,8 +49,8 @@ them**. → **Gate 1: yes on the copy + plan before anything renders.**
 ### Phase 2 · Preview → iterate  · **Gate 2**
 The agent builds the chosen archetypes as boards on the Paper canvas — either by duplicating the
 pre-built boards in the "Build & Brew Kit" master file (Mode A) or by writing the archetype HTML
-into a fresh file (Mode B; see `AGENT.md`). The Build Master **drags the photos onto the file** and
-the agent sets each board's photo from them, fills copy, applies the chosen ground + accent, and
+into a fresh file (Mode B; see `AGENT.md`). The agent sets each board's photo from the Desktop folder
+(via `paper-asset://`, Full Disk Access on; drag as the fallback), fills copy, applies the chosen ground + accent, and
 puts the **caption + tags as a text board beside the slides** so the whole post is in one place. The Build Master reacts and steers
 (swap a photo, change a line, try another accent) and the agent makes the change. The agent designs;
 the Build Master does not hand-build. If the Build Master edits the canvas themselves, the agent runs
@@ -89,7 +89,7 @@ records which board maps to which HTML and whether they match. When they differ,
 the HTML is corrected up to it.
 
 > **Ground + accent** are token controls on the board: ground = light (paper + ink) or dark
-> (leather + cream) on the block/text archetypes (D, numbers, build-master, F); accent = one of
+> (leather + cream) on the block/text archetypes (D, build-master, F); accent = one of
 > pumpkin, cornflower, plum, canary, sand, emerald, or none (`none` = fully tonal). Photo slides
 > (A, G) stay photo-with-scrim, so ground mainly moves the block/text archetypes.
 
