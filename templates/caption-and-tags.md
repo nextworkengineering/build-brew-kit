@@ -6,9 +6,9 @@ The image is only half the post. The caption and the tags are what push it into 
 Keep it short and human. Two or three lines.
 - What happened, concrete: "45 of us built together in Austin last night."
 - One specific detail or a small human moment: "Six projects went live. One person shipped their first ever."
-- A soft invite: "We run these every month. Come to the next one."
+- A soft invite, and only what's true: if the night recurs, "come to the next one." If it was a one-off, invite people to start their own. Never claim a cadence ("every month") unless it's real.
 
-Write like you'd text a friend who wasn't there, not a press release.
+Write like you'd text a friend who wasn't there, not a press release. Nothing invented, no "not X, but Y", no em dashes. See `../brand/authentic-copy.md`.
 
 ## Tags (the reach engine)
 - **Tag the people in the photos.** This is the single biggest lever. Each person you tag puts the post in front of their followers.
@@ -48,7 +48,7 @@ short, tagged link in the caption beats a bare domain.
 > 45 of us packed a room in Austin last night and just built.
 > Six projects went live. Someone shipped their first ever project and you could feel the room lift.
 > A year ago I couldn't do this. NextWork got me here, and now I get to host it.
-> We run these every month. Come build the next one, or start your own: nextwork.ai
+> Want to run one in your city? I'll help you start: nextwork.ai
 >
 > with @person1 @person2 @person3 and @NextWork
 > #buildandbrew #nextwork #austintech

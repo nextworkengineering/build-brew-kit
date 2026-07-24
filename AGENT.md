@@ -28,14 +28,20 @@ Story-first, never output-first. Do NOT render or export until you've heard what
    - Single post or carousel? ASK THIS FIRST, before you gather anything else, and get an answer. Single
      post is the default and by far the cheapest (fewer agent calls and tokens); a carousel is several times
      the work, so recommend single unless they specifically want the full swipe. (Not sure? Have them tell
-     you about the night, then you recommend, and recommend single by default.)
+     you about the night, then you recommend, and recommend single by default.) If the first message already
+     names a format (some course prompts pre-fill "make a single post"), still confirm it's what they actually
+     want and offer the other option; don't just obey the seed.
    - What happened? The arc — doors, pairing up, building, demos, the one human moment. Their words become the copy.
-   - What did you build? The actual projects — the app, site, agent, or thing the group (or a standout person)
-     shipped, not just how many. This is what the headline should name: "We built six working apps in a night"
-     or "She shipped her first AI chatbot" beats a vague "amazing night." If they can't name one, that is fine —
-     lean on the numbers and the room instead.
+   - What did you build? Use their EXACT words for the thing they shipped, and make that the headline noun.
+     If they say "a carousel generator", the headline says carousel generator, never a generic "an app". Name
+     the real project ("She shipped her first AI chatbot", "We built six working apps in a night") over a vague
+     "amazing night". If they can't name one, that is fine: lean on the numbers and the room. Never invent a
+     build they didn't claim, and never swap their word for a more generic one.
    - Who are you (Build Master name), event name, city.
-   - The numbers — headcount, projects shipped, any "first ever."
+   - The numbers: headcount, projects shipped, any "first ever". Use only numbers they give you; never round up
+     or add a "first ever" they didn't say.
+   - One-off or recurring? Only promise a "next one" or a cadence ("every month") if they confirm it is real.
+     A one-off invites people to start their own, not to a session that doesn't exist.
    - Where are you posting — Instagram, LinkedIn, or both.
    - The look: ground light (paper) or dark (leather)? Accent: the default is none (fully tonal, let the
      photo carry it). Only add an accent if they want one, and keep it a small highlight; options are pumpkin,
@@ -74,15 +80,15 @@ A smart friend who has already figured out what you are struggling with. Confide
 Each is a ready board in the Paper file (design source in templates/archetypes/). Choose by the photo and the job:
 - A · photo + serif (contain)  (A-photo-contain.html) - one photo shown whole on a paper ground (never cropped), a serif line + one big word below it. The default single post. Group- and landscape-safe by default. A tall portrait photo floats small here; for a portrait that suits a full frame you can cover-crop it, but never cover-crop a wide group.
 - D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a bold grotesk claim below. A punchy poster, and the go-to for a LANDSCAPE / wide photo (single post or carousel slide): the photo sits in the band and the text lives in the block below, so it works every time and the text never fights the image. Group-safe: the photo band + block keep the whole crew visible.
-- F · narrative text  (F-narrative-text.html) - no photo. One two-tone statement (claim bright, follow-up muted). A story beat or a hot take.
 - G · timestamp moment  (G-timestamp.html) - a photo with one centered time + one line. String them in order to tell the night (6:00 doors -> 7:30 paired up -> 9:00 demos). The carousel spine.
 - Build Master story  (individual-build-master.html) - names YOU + your event, told first person, two-tone. A single post that sells the event by telling how you built something real.
 
-SINGLE POST (default, lowest effort): one of A / D / F / Build Master story. One share is a win.
-CAROUSEL: a full-bleed Cover board -> a few G timestamp moments -> a full-bleed Invite board. Keep the same look on every slide. The Cover and Invite are their own full-bleed scrim boards in the master file (duplicate them) — the cover is NOT archetype A.
-Virtual event, no photos? Use F (text only), or a screenshot of what a member built as the photo in D (the block carries the words, never put text over the UI).
+SINGLE POST (default, lowest effort): one of A / D / Build Master story. One share is a win.
+CAROUSEL: a full-bleed Cover board -> a few G timestamp moments -> a full-bleed Invite board. Keep the same look on every slide. The Cover and Invite are their own full-bleed scrim boards in the master file (duplicate them) — the cover is NOT archetype A. Length follows the story's beats (doors, building, demos, the human moment), NOT the number of photos that survived a filter: never emit one slide per leftover photo. If you can't find at least ~4 strong people-photos for real moments, recommend a single strong post instead of a thin 3-slide carousel, and say why. A screenshot or a detail shot can carry a supporting moment (in a D block); a hero moment wants people.
+Virtual event, or a night with few people-photos? Put a screenshot of what a member built into a D block (the block carries the words, never text over the UI). If you can't get a real multi-beat story out of the photos you have, make one strong single post rather than stretch a thin carousel.
 
 == COPY RULES (write like a builder, not a brochure) ==
+FIRST, THE HARD RULE: only say what is true. Every fact in the copy must trace to something the Build Master told you. Never invent what they built (use their exact words: "a carousel generator", not a generic "app"), never invent a cadence ("we run these every month"), never inflate a number or add a "first ever" they didn't claim. If you aren't sure it's true, ask or leave it out. A made-up detail is worse than a plain one, and it is the fastest way to lose the room's trust.
 1. Lead with the outcome, not hype. Name what actually shipped, in 10 words or fewer, so it lands at a glance without reading the caption.
 2. Make it yours. First person, you ran it.
 3. One claim per slide. Let the photo or a screenshot back it.
@@ -90,7 +96,7 @@ Virtual event, no photos? Use F (text only), or a screenshot of what a member bu
 5. Invite people to DO, not watch. "come build", "bring a friend".
 6. Numbers earn trust. Builders, projects, city.
 7. Sentence case. No letter-spacing on labels.
-8. No em dashes or en dashes in the copy or the caption. The characters "—" and "–" are banned; use a period, a comma, or the word "and" instead. Before Gate 1 and again before export, scan every board line and the caption and strip any that slipped in. A stray "—" is the clearest AI tell.
+8. Sound like a person, not a model, and prove it in two passes. These read as AI, so they're banned: em dashes and en dashes ("—", "–"; use a period, a comma, or "and"); "not X, but Y" antithesis ("not a demo night, a feedback night"); three-part staccato triads ("Nine builders. One app. A very long list of notes."); manufactured punchlines and neat aphorisms; filler ("in order to" becomes "to"); rhetorical openers ("Honestly?"); and model-vocabulary ("testament", "landscape", "delve"). Once before Gate 1 and again before export, re-read every board line and the caption and rewrite anything that hits one of these in the Build Master's real voice. A stray "—" or a "not X, but Y" is the clearest tell. See brand/authentic-copy.md.
 9. The story is the hero, the clock is not. The outcome / what-you-built line is the largest text; a date or time is small supporting metadata, never the biggest thing on a single post. (The G timestamp slide in a carousel is the one exception: there the time is the point.)
 Story arc (single post or carousel): Hook -> Stakes -> Turn (you built it over coffee) -> Proof -> Invite.
 
@@ -103,6 +109,7 @@ Display serif = Instrument Serif (the accent word in A, the timestamp in G). Eve
 
 == PHOTOS ==
 iPhone photos are HEIC — convert to JPG before importing to Paper: sips -s format jpeg -Z 1600 IN.HEIC --out OUT.jpg (a one-line prep step, not a render pipeline). Warm/dim shots grade cinematic (great for A, G, Build Master story); bright, empty-topped shots suit D. The board applies the grade — one consistent cinematic treatment (see brand/grade.md; for magenta/RGB party lighting use the strong colored-lighting branch there) — do not pre-edit or use a heavy filter. Never the pixelated-photo look.
+People are the hero, but don't hard-refuse other shots. A candid with faces makes the strongest HERO slide (the cover, a single post, the emotional beats). A screenshot of what someone built, a close-up of the table, a detail shot are all welcome as SUPPORTING slides (a screenshot goes in a D block, never text over the UI). If they hand you only screenshots or desktop grabs, don't reject them: use them as support and ask if there's even one photo with people for the hero, or build a single post around the best shot you have. Explain the role of a shot, never just refuse it.
 Orientation: notice the photo's shape. A LANDSCAPE / wide photo -> use archetype D (photo band + block, text below the photo): it works every time and the text never fights the image, on a single post or a carousel slide. A very wide GROUP shot -> contain it (archetype A, or a 1:1 square) so no one is cropped. A portrait / vertical photo can fill the frame (cover). Never cover-crop a wide group shot, that silently drops learners.
 Text placement: keep the headline and line in the BOTTOM THIRD of the frame. If type would fall over someone's face, nudge it down (rarely up) so faces stay legible. The human story is the point, so a face is never covered by text. The full-bleed boards carry a bottom-weighted scrim so the words read without hiding anyone.
 
@@ -122,13 +129,13 @@ Always sRGB. If they don't say where: single -> one image; multi-slide -> ask In
 Name the files for the event, never a generic default. Slug them build-and-brew-<city>-<date>: e.g. build-and-brew-austin-2026-07-22-01.png, -02.png, ... for a carousel, and build-and-brew-austin-2026-07-22.pdf for the LinkedIn PDF. Never leave them as "combined" or an unnamed default; clean, contextual names are both file hygiene and brand.
 
 == NEVER ==
-Build a board before you've heard the story and shown a plan (Gate 1). Build on whatever Paper canvas happens to be active instead of confirming the file + page and using a fresh, clearly-named one (you can silently destroy their existing work). Export before they've seen and approved the visuals (Gate 2). Build anything before you have asked and heard single post vs carousel (ask the format first). Reaching for a local renderer (Playwright, ImageMagick, Pillow) or hand-designing outside Paper — everything is built on the Paper canvas; even if you find a render or export script on disk (a render.sh, an export.sh), ignore it, there is no local pipeline. A standing default accent instead of none (the default is none; ask before you add one). Pure white or pure black grounds. More than one accent per post. A heavy filter that hides the moment. Text over a face (keep type in the bottom third, off faces). An em dash or en dash (—, –) in any copy or caption. Corporate hype words. A paragraph where one line belongs. The pixelated-photo look. A neon or off-brand green, or any colour that is not an exact brand token (the only green is emerald #11cca6). A saturated colour block. Stock or outline icons, icon+label rows, or an infographic feature-list. A script or handwriting font, or an emoji in the artwork. The logo more than once per slide. Drop shadows, bevels, glows, or decorative gradients. (These are the AI-slop tells the QA read-back rejects.)
+Build a board before you've heard the story and shown a plan (Gate 1). Build on whatever Paper canvas happens to be active instead of confirming the file + page and using a fresh, clearly-named one (you can silently destroy their existing work). Export before they've seen and approved the visuals (Gate 2). Build anything before you have asked and heard single post vs carousel (ask the format first). Reaching for a local renderer (Playwright, ImageMagick, Pillow) or hand-designing outside Paper — everything is built on the Paper canvas; even if you find a render or export script on disk (a render.sh, an export.sh), ignore it, there is no local pipeline. A standing default accent instead of none (the default is none; ask before you add one). Pure white or pure black grounds. More than one accent per post. A heavy filter that hides the moment. Text over a face (keep type in the bottom third, off faces). An em dash or en dash (—, –) in any copy or caption. A fact you weren't given (an invented build, a number they didn't say, an "every month" recurrence they didn't confirm). A "not X, but Y" antithesis or a three-part staccato triad (the loudest copy tells). Corporate hype words. A paragraph where one line belongs. The pixelated-photo look. A neon or off-brand green, or any colour that is not an exact brand token (the only green is emerald #11cca6). A saturated colour block. Stock or outline icons, icon+label rows, or an infographic feature-list. A script or handwriting font, or an emoji in the artwork. The logo more than once per slide. Drop shadows, bevels, glows, or decorative gradients. (These are the AI-slop tells the QA read-back rejects.)
 
 == FILL-IN TEMPLATE (fill it FROM the intake, then confirm at Gate 1) ==
 What happened: [their story of the night, in their words — this is where the copy comes from]
 What they built: [the actual projects / things shipped — names the headline can use, plus any standout or first-ever]
 Format: [single post OR carousel]
-Archetype(s): [A / D / F / G / build-master]
+Archetype(s): [A / D / G / build-master]
 Photos: [Desktop folder or list]
 The line(s): [one short line per slide, in the Build Master's own voice]
 Ground: [light (paper) OR dark (leather)]
@@ -151,11 +158,11 @@ Fallbacks, only if Full Disk Access can't be granted:
 
 **Two build modes** — pick by whether the Build Master has the shared master file. Aim for Mode A (build off our template); use Mode B only if they cannot access the shared file.
 - **Mode A · master file (duplicate).** The recommended primary path. Have them open the shared kit file (https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T) and **Duplicate it to their own Paper** first, so their copy carries the brand tokens + fonts + pre-built boards; you work in their copy. (file id `01KY2G5V12Q1BBPY7GC8PRSY1T`) `open_file` it → `duplicate_nodes` the board you picked into a working area → set the Photo frame's fill to the local photo via `paper-asset://` (Full Disk Access on; drag only as a fallback) → `set_text_content` for the copy → apply ground + accent via the board tokens (`set_tokens` / `update_styles`) → `finish_working_on_nodes`. The carousel **Cover and Invite are full-bleed scrim boards that live only in the master — duplicate them; do NOT rebuild the cover as archetype A.**
-- **Mode B · fresh file (from HTML).** The fallback, when they cannot access the shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same place-photo / fill / copy / token / finish path. A, D, F, G, Build Master, Cover, and Invite all ship as HTML now, so you can build a full carousel in Mode B too.
+- **Mode B · fresh file (from HTML).** The fallback, when they cannot access the shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same place-photo / fill / copy / token / finish path. A, D, G, Build Master, Cover, and Invite all ship as HTML now, so you can build a full carousel in Mode B too.
 
 Both modes converge on the same place-photo step: with Full Disk Access you set each board's fill from their folder yourself, and drag is only the fallback. Place the caption + tags as one single selectable text block beside the slides (one clean copy-paste, formatting intact) so the whole post lives in one place; keep that caption block OUT of the exported assets.
 
-> Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, build-master, F).
+> Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, build-master).
 
 **Free Paper caveat.** Free Paper accounts have a weekly MCP-call cap; a full carousel may not fit. On free tier, prefer a single post, or use a paid account for carousels. See `free-paper.md`.
 
@@ -170,13 +177,14 @@ Before you export — and any time the Build Master has edited the canvas themse
 2. Grade: the board's grade is applied and the photo still reads as the moment, not mush.
 3. Accent: exactly one, used as a small highlight, never a big saturated block. A warm accent on a warm photo (no cold cornflower or plum on a warm event photo).
 4. Faces: no one is cropped out — the whole crew is in frame.
-5. Copy: one line / one claim per photo, sentence case, proof not hype, first person.
-6. Ground: paper (never pure white) or leather (never pure black).
-7. Feed-size read: at a small size, the photo and the line still carry it.
+5. Copy: one line / one claim per photo, sentence case, proof not hype, first person. No AI tells (no "not X, but Y", no three-part triad, no em dash).
+6. Truth: every claim traces to something the Build Master told you. No invented build (no unstated "app"), no unconfirmed recurrence ("every month"), no number they didn't give.
+7. Ground: paper (never pure white) or leather (never pure black).
+8. Feed-size read: at a small size, the photo and the line still carry it.
 Logo-removal test: with no mark, does it still feel like NextWork (warm, clean, real)?
 
 **Copy-paste QA prompt** (hand this back to the agent to run the read-back on demand):
-> Run the brand-QA read-back on the board(s): fonts (Instrument Serif headline, Inter everything else, no third font), grade applied and the photo still reads, exactly one accent used as a small highlight (warm accent on a warm photo), no face cropped out, one line / one claim per photo in sentence case, ground never pure white or pure black, and it still reads at feed size. If `get_screenshot` is empty, verify with `get_computed_styles` + the tree and ask me to eyeball it. Flag or fix any fail; never export on a fail.
+> Run the brand-QA read-back on the board(s): fonts (Instrument Serif headline, Inter everything else, no third font), grade applied and the photo still reads, exactly one accent used as a small highlight (warm accent on a warm photo), no face cropped out, one line / one claim per photo in sentence case with no AI tells (no "not X, but Y", no em dash), every claim traceable to what they told you (nothing invented, no unconfirmed "every month"), ground never pure white or pure black, and it still reads at feed size. If `get_screenshot` is empty, verify with `get_computed_styles` + the tree and ask me to eyeball it. Flag or fix any fail; never export on a fail.
 
 **AI-slop tells — reject on sight.** The whole point of this kit is that a vibe-coded post does NOT look vibe-coded. NextWork's feel is premium, quiet, editorial. If you see any of these, it is not shippable, fix it before Gate 2:
 - A neon or lime green, or ANY colour that is not an exact brand token. The only green is emerald #11cca6 (a muted teal, never a bright lime). The full set: pumpkin #fa8a45, canary #ffdd2d, sand #e5dcc7, cornflower #308ded, plum #875bf7. A colour picked "because it pops" is the #1 tell.
@@ -191,4 +199,4 @@ Logo-removal test: with no mark, does it still feel like NextWork (warm, clean, 
 **The bar.** The quiet slide wins. One line of serif on warm paper, one small mark, nothing else, is the NextWork bar (the "What will you learn next?" slide is exactly this). If a slide feels louder, busier, or more colourful than that, it is drifting to slop. Premium is restraint: space, one idea, a real photo or big type, at most one tiny accent. When in doubt, remove something.
 
 ## The caption + tags
-The caption (the post's text field) and who you tag are what make it travel. See `templates/caption-and-tags.md`. Always tag the people in the photos. Render the caption as ONE single text block on the canvas so the Build Master copies it in one action and the formatting survives the paste; it is a reference board, never a slide, so keep it out of the export.
+The caption (the post's text field) and who you tag are what make it travel. See `templates/caption-and-tags.md`, and keep it human and true (`brand/authentic-copy.md`). Always tag the people in the photos. Render the caption as ONE single text block on the canvas so the Build Master copies it in one action and the formatting survives the paste; it is a reference board, never a slide, so keep it out of the export.
