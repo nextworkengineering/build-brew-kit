@@ -161,7 +161,7 @@ Both modes converge on the same place-photo step: with Full Disk Access you set 
 
 **Export (Phase 3).** From Paper: Instagram = the 1080×1350 boards as images in swipe order; LinkedIn = the boards combined into one PDF (a swipeable document). See the EXPORT rules in the system prompt above.
 
-**Design source vs canon.** The archetype HTML in `templates/archetypes/` is the portable source you build FROM in Mode B. The master Paper file's boards are the visual canon. They are kept in sync (see `MANIFEST.md`); when they differ, the board wins and the HTML is corrected up to it.
+**Design source vs canon.** The archetype HTML in `templates/archetypes/` is the portable source you build FROM in Mode B. The master Paper file's boards are the visual canon. They are kept in sync; when they differ, the board wins and the HTML is corrected up to it.
 
 ## BRAND-QA READ-BACK (run before every export, and again after any human canvas edit)
 Before you export — and any time the Build Master has edited the canvas themselves — read the board back and check it. Use `get_screenshot` for the crop and feel, `get_computed_styles` for fonts and colour, the tree for structure. If any check fails, fix it or flag it; never export on a fail.

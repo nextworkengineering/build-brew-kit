@@ -1,6 +1,6 @@
 # Worked example: Build & Brew, Austin
 
-A real event run end-to-end through the story-first workflow (`WORKFLOW.md`). Photos are the cleared
+A real event run end-to-end through the story-first workflow. Photos are the cleared
 event selects from `../_test-photos/`. The whole set is **tonal, no accent** (paper / leather / cream),
 which is one valid answer to the "ground + accent?" intake question.
 
