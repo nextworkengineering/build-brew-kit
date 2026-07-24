@@ -8,19 +8,12 @@ Brand snapshot from the NextWork kernel. v0.3: story-first workflow + growth-loo
 - `WORKFLOW.md` - the canonical Build Master run (Phase 0-4, the two gates, Paper-only agent-driven) - the human-readable process
 - `start-your-own-build-and-brew.md` - the host on-ramp: the whole event format on one page, the top of the growth loop
 - `magic_trick.md` - the human-adds-memorable guardrail, now wired into Phase 2 (Gate 2) of the workflow
-- `templates/archetypes/` - five post archetypes (A / D / F / G / build-master) + README; the HTML is the Paper design source (local render/export scripts archived to `_internal/`)
+- `templates/archetypes/` - five post archetypes (A / D / F / G / build-master) + README; the HTML is the Paper design source for building in a fresh Paper file
 - `templates/caption-and-tags.md` - the caption + tags, plus NextWork credit / viewer on-ramp / trackable-link conventions (the growth loop)
 - `brand/` - colors, typography, voice, grade (agent-readable; hexes match the templates exactly)
 - `free-paper-path/` - free-tier Paper guidance
 - `EXAMPLES/` - sample event photos + rendered demos
 - `scripts/sync-from-kernel.md`, `CONTRIBUTING.md`, `LICENSE`
-
-## Maps to the house atomic-kit convention (OMS / TMJ / Sona)
-- `brand/colors.json` + `typography.md` ≈ `agent/visual`
-- `brand/voice.md` ≈ `agent/verbal`
-- `README.md` + `templates/` ≈ `human/`
-- `magic_trick.md` ≈ the same file in every NextWork kit
-- Public repo, so there is no `_internal/` overlay; internal-only content is excluded by design.
 
 ## Pending
 - Public repo home + which incentives NextWork funds
