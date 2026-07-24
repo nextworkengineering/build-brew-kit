@@ -1,16 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <!--
   ARCHETYPE Cover · Full-bleed scrim cover  (the carousel opener; matches master board "Carousel · 1 · Cover")
-  Full-bleed photo (cover) + a soft radial scrim + a serif title bottom-left.
+  Full-bleed photo (cover) + a soft radial scrim + an Inter title bottom-left.
   This is the carousel COVER — NOT archetype A. A is the single-post / contain layout; the cover is photo-forward.
   Slots: {{PHOTO}} {{META}} {{TITLE}}
-  1080x1350. Instrument Serif title + Inter meta; falls back gracefully.
+  1080x1350. Inter title + Inter meta; falls back gracefully.
   Photo is COVER (fills the frame), so pick a shot that survives a crop. Never put a WIDE GROUP here: if the
   whole crew must be the cover, contain them on archetype A or D instead; never silently drop an edge person.
   Photo enters via paper-asset:// once Paper has Full Disk Access (Phase 0); the agent sets this frame's fill.
 -->
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Instrument+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');
   :root{ --ink:#1a1815; --cream:#f8f5f1; }
   *{margin:0;box-sizing:border-box}
   html,body{width:1080px;height:1350px}
@@ -24,7 +24,7 @@
   .meta{position:absolute;top:60px;left:64px;font-weight:500;font-size:22px;color:rgba(248,245,240,.92)}
   .mark{position:absolute;top:56px;right:64px;width:44px;height:44px}
   .title-block{position:absolute;left:64px;top:946px;width:930px;display:flex;flex-direction:column;gap:10px}
-  .title{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:500;font-size:62px;
+  .title{font-family:"Inter",system-ui,-apple-system,sans-serif;font-weight:500;font-size:62px;
     line-height:62px;letter-spacing:-.01em;max-width:648px;color:var(--cream)}
 </style></head>
 <body><div class="frame">

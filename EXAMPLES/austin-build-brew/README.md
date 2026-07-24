@@ -34,5 +34,5 @@ On the Paper canvas, from these archetype picks and photos:
 Then exported from Paper: the Instagram images in order, and one LinkedIn PDF (5 pages, 1080×1350).
 
 ## Note on the look
-This set is fully tonal on purpose (accent = none): the serif word sits in cream instead of an accent
+This set is fully tonal on purpose (accent = none): the big word sits in cream instead of an accent
 colour. Any archetype can go tonal by setting the accent to none. See `templates/archetypes/README.md`.

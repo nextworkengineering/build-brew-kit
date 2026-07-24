@@ -1,16 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <!--
-  ARCHETYPE A · Photo + serif (contain)  (the moment — whole crew in frame)
+  ARCHETYPE A · Photo (contain)  (the moment — whole crew in frame)
   Use for: any event photo, especially wide / landscape group shots. The photo is
   CONTAINED on a paper ground (letterboxed), so nobody is ever cropped out of frame.
   Slots: {{PHOTO}} {{META}} {{LINE1}} {{ACCENT}} {{DESC}}
-  1080x1350. Fonts: Instrument Serif (display) + Inter (labels), both free; fall back gracefully.
+  1080x1350. Font: Inter throughout, free; falls back gracefully.
   Orientation: landscape / group -> contain (this file, the default). A tall portrait photo
   floats small here; for a portrait that genuinely suits a full frame set .photo{object-fit:cover}.
   Never cover-crop a wide group shot.
 -->
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&family=Instrument+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');
   :root{ --paper:#f8f5f1; --ink:#1b1918; --muted:#6c615c; --accent:#fa8a45; }
   *{margin:0;box-sizing:border-box}
   html,body{width:1080px;height:1350px}
@@ -24,11 +24,11 @@
   .meta{position:absolute;top:60px;left:64px;font-weight:500;font-size:22px;color:var(--muted)}
   .mark{position:absolute;top:56px;right:64px;width:44px;height:44px}
   .text{position:absolute;left:64px;top:944px;width:952px;
-    font-family:"Instrument Serif",Georgia,"Times New Roman",serif;color:var(--ink)}
+    font-family:"Inter",system-ui,-apple-system,sans-serif;color:var(--ink)}
   .line1{font-size:44px;line-height:51px;letter-spacing:.01em}
-  /* Big serif word. Tonal ink by default (the quiet bar). For one warm pop on a warm
+  /* Big word. Tonal ink by default (the quiet bar). For one warm pop on a warm
      photo, set color:var(--accent) (pumpkin / canary / sand). One accent, never a block. */
-  .accent{font-size:122px;line-height:117px;color:var(--ink);letter-spacing:-.01em}
+  .accent{font-weight:500;font-size:122px;line-height:117px;color:var(--ink);letter-spacing:-.01em}
   .desc{font-size:44px;line-height:53px;letter-spacing:.01em}
 </style></head>
 <body><div class="frame">
