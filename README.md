@@ -60,4 +60,4 @@ Everything visual lives in one Paper file: the guide, every template, and a fini
 
 ---
 
-*Brand values here are a snapshot of the internal NextWork kernel. See `scripts/sync-from-kernel.md`.*
+*Brand values live in `brand/`: colours, type, and voice, matching the templates exactly.*

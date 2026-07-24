@@ -2,7 +2,7 @@
 
 > **Hand this file to your AI agent** (Claude Code or Cursor, with the Paper MCP connected). A paste-anywhere system prompt that carries the NextWork brand so your Build & Brew posts look right by default. The agent does the design and builds everything on the Paper canvas.
 
-> **Compiled view, not the source.** Brand values come from `brand/`. If they change, this block is regenerated (see `scripts/sync-from-kernel.md`).
+> **Brand values live in `brand/`** (colours, type, voice). This file carries them inline and matches the templates; if you change a value, change it in both places.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "_note": "Canonical palette for the Build & Brew kit. These hexes match the templates in templates/archetypes/ and AGENT.md exactly — if you change one, change all three. Derived from the NextWork kernel; see scripts/sync-from-kernel.md.",
+  "_note": "Canonical palette for the Build & Brew kit. These hexes match the templates in templates/archetypes/ and AGENT.md exactly; if you change one, change all three.",
   "core": {
     "paper": "#f8f5f1",
     "ink": "#1b1918",
