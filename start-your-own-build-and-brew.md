@@ -36,7 +36,7 @@ it in your city.
 
 ## Make it yours
 This is a starting point, not a rulebook. The best nights have your fingerprint on them: your city, your
-crowd, your weird good idea. That's the magic trick (see `magic_trick.md`), and it's the part no template
+crowd, your weird good idea. That's the magic trick (see `the-human-bit.md`), and it's the part no template
 can hand you.
 
 ---

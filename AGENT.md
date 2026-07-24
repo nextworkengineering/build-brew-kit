@@ -56,7 +56,7 @@ Story-first, never output-first. Do NOT render or export until you've heard what
    THE MAGIC TRICK (do this before Gate 2): the kit gets them correct and clean, which is only the floor.
    Ask for the one human thing the system can't invent — the candid photo where someone is actually
    laughing, the line only they would write because they were in the room, the real name to tag. That
-   human bit is what makes the post theirs and what makes it fill the next room. See magic_trick.md.
+   human bit is what makes the post theirs and what makes it fill the next room. See the-human-bit.md.
    [GATE 2] Get a yes on the visuals before you export.
 
 3 · EXPORT — only after Gate 2. Package for where they're posting (see EXPORT).
@@ -157,7 +157,7 @@ Both modes converge on the same place-photo step: with Full Disk Access you set 
 
 > Ground + accent are token controls on the board. Ground = paper (light: paper + ink) or leather (dark: leather + cream). Accent = one of pumpkin / cornflower / plum / canary / sand / emerald / none; in A it colours the serif word, in F the claim, `none` = fully tonal. Photo slides (A, G, Cover, Invite) stay photo-with-scrim, so ground mainly moves the block / text archetypes (D, build-master, F).
 
-**Free Paper caveat.** Free Paper accounts have a weekly MCP-call cap; a full carousel may not fit. On free tier, prefer a single post, or use a paid account for carousels. See `free-paper-path/`.
+**Free Paper caveat.** Free Paper accounts have a weekly MCP-call cap; a full carousel may not fit. On free tier, prefer a single post, or use a paid account for carousels. See `free-paper.md`.
 
 **Export (Phase 3).** From Paper: Instagram = the 1080×1350 boards as images in swipe order; LinkedIn = the boards combined into one PDF (a swipeable document). See the EXPORT rules in the system prompt above.
 

@@ -1,73 +1,35 @@
-# NextWork Community Kit
+# Build & Brew Kit
 
-A ready-made kit for **Build Masters & Brew Masters**: point your AI agent at it and turn your event photos into clean, on-brand social posts in minutes. No design-tool wrangling, no blank page.
+Turn your event photos into clean, on-brand posts. Your AI does the design. You talk, it builds, you approve. No design skills needed.
 
-Running a Build & Brew is leadership. This helps you show it.
+Running a Build & Brew is leadership. Posting it is proof you ship and bring people together. Tag the people who came, and your next event fills itself.
 
-## Why post your events
+## What you do
 
-You ran a room where people built real things. That's leadership, and this is your personal brand: proof, on the record, that you ship and bring people together.
+You need three things: the free **Paper** desktop app, an AI tool (Claude Code or Cursor) with Paper connected, and this kit downloaded to your computer. Then:
 
-- **It reads as leadership.** Running events and posting about them signals initiative, community, and active self-improvement beyond your day job. That is what people skim CVs and LinkedIn for.
-- **It's a build session.** You upskill on the AI-agent workflow while you make the asset. The post is the byproduct of learning a real skill, the same skill NextWork teaches.
-- **It compounds.** Tag the people in your photos. Their feeds see it, their friends see it, and your next event fills itself.
-- **It passes the torch.** Someone who sees your post thinks "I could do that too," starts their own first project, and runs their own night. You're the start of that in your city.
+1. Open the Paper app and **duplicate the kit's template** (link below). Build in your copy, never the shared original.
+2. Turn on Full Disk Access for Paper (System Settings > Privacy & Security > Full Disk Access, switch on Paper, then reopen it). This is the step that lets it use your photos.
+3. Put your event photos in a folder on your Desktop.
+4. Open this kit in your AI tool and say: "Read AGENT.md and follow it. My photos are in [your folder]."
+5. It asks you about the night, shows you a draft to approve, builds it on the Paper canvas, and hands you the finished files to post.
 
-## The look: your photos are the design
+No photos, or a virtual event? It can build a text-only post, or use a screenshot of something a member made.
 
-The event photos are the design. The kit stays deliberately clean and editorial, and that restraint is the point: it's what keeps a post from looking AI-generated.
+## The one rule
 
-- **Your photos are the hero.** Real faces mid-build carry the post. Everything else is quiet: one line of text, one small mark.
-- **Nothing layered on top.** No decorative gradients, no extra colours, no stickers, no clip-art, no pasted logos or assets. That "more is more" look is exactly the AI-slop tell we avoid.
-- **The agent holds the line.** If you ask for something off-style, it will explain why and steer you back. Trust it: that is how your post stays on-brand.
+Your photos are the design. Real faces mid-build carry the post. No extra colours, no gradients, no stickers, no clip-art. One photo, one line. The AI holds this line for you, so if a post ever looks busy, tell it to strip something back.
 
-One photo, one line, one small mark. When in doubt, remove something.
+## The Paper file
 
-## What's in the kit
+Everything visual lives in one file: a short guide, the templates, and a finished example to copy the look from.
 
-- `AGENT.md` — **the one file you hand to your AI agent.** It carries the brand rules, the kit of parts, the copy rules, and how to render and export, so your posts look right by default.
-- `templates/archetypes/` — the **kit of parts**: five post archetypes (the design source for the Paper boards). See its `README.md` for the archetype list and slots.
-- `brand/` — the colours, fonts, and voice that make a post feel like NextWork.
-- `templates/caption-and-tags.md` — the post's text field, who to tag, and how to credit NextWork and open the door for the next person (the growth loop, in your voice).
-- `start-your-own-build-and-brew.md` — never run one? The whole format on one page. The on-ramp for the next host.
-- `free-paper-path/` — running the kit on a free Paper account, and where the free-tier limits are.
-- `EXAMPLES/` — sample event photos and rendered demos.
+**[Build & Brew Kit (Paper)](https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T/1-0)**. Open it, then File > Duplicate to make your own copy, and build in that.
 
-## Quickstart
+## After you post
 
-Your AI agent does the design. You talk, you approve, it builds. There is a one-time Paper setup, then you run it. No design skills, no tech skills needed.
-
-### Step 1 — set up Paper (once, about 2 minutes)
-Do all four, in order. Skipping any one of them is the usual reason a run stalls.
-1. **Open the Paper desktop app** (the Mac app, not the website) and leave it open. Your agent works through this app, so it has to be running.
-2. **Duplicate the kit's Paper file to your own Paper.** Open [Build & Brew Kit](https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T/1-0) > **File > Duplicate**. Your copy already has the NextWork fonts, colours, and every template, so your posts stay on-brand. Build on your copy, never on the shared original. (No access yet? A new blank file works too, your agent will still build it.)
-3. **Give Paper Full Disk Access:** System Settings > Privacy & Security > Full Disk Access > switch on **Paper** > quit and reopen Paper. This is the step that lets the agent use your photos. Skip it and photo import just hangs with no error.
-4. **Make a folder on your Desktop** and drop your event photos into it.
-
-### Step 2 — run it
-1. **Clone this repo** (or download the ZIP) and open it in your AI agent (Claude Code or Cursor, with the **Paper MCP connected**).
-2. **Paste this**, filling in your photo folder and the file you named:
-   > "Read AGENT.md and follow it. My Build & Brew photos are in `./photos`, and I duplicated the Build & Brew Kit template in Paper as '<name>' (or opened a blank Paper file called '<name>'). Make me a single post about the event."
-3. It asks about the night, shows you a plan to approve (Gate 1), builds it on the **Paper canvas** for you to react to (Gate 2), then exports it. You never touch a design tool.
-
-**No photos (virtual event)?** Use the text-only archetype (F), or a screenshot of what a member built as the photo in D. See `AGENT.md`.
-
-## The kit's Paper file
-
-Everything visual lives in one Paper file: the guide, every template, and a finished worked example.
-
-👉 **[Build & Brew Kit (Paper)](https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T/1-0)** — open it, then **File > Duplicate** to make your own copy, and build there. Duplicating (not starting blank) means your copy carries the fonts, colour tokens, and every template board, so it stays on-brand.
-
-- **START HERE** page: the guide + the kit of parts (every template).
-- **Output · Dallas** page: a finished worked example to copy the look from.
-
-## The ask (optional, but it's the flywheel)
-
-- Tag attendees and @NextWork so the post travels.
-- Credit what got you here and leave a door open for the next person (see `templates/caption-and-tags.md`). That's how a viewer becomes the next builder.
-- Haven't run one yet? `start-your-own-build-and-brew.md` is the whole format on one page. Your first event fills the next room.
-- Found a layout you like, or built a new archetype? PR it back (see `CONTRIBUTING.md`) so the whole community gets it.
+Tag everyone in the photos. It is the single biggest thing that helps a post travel. Credit what got you here, and leave a link so the next person can start their own. Never run an event before? `start-your-own-build-and-brew.md` is the whole format on one page.
 
 ---
 
-*Brand values live in `brand/`: colours, type, and voice, matching the templates exactly.*
+Brand values (colours, fonts, voice) live in `brand/`. On a free Paper account, `free-paper.md` covers what fits and where the limit is.
