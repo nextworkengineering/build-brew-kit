@@ -4,12 +4,7 @@ A real event run end-to-end through the story-first workflow. Photos are the cle
 event selects from `../_test-photos/`. The whole set is **tonal, no accent** (paper / leather / cream),
 which is one valid answer to the "ground + accent?" intake question.
 
-## What's here
-- `single.png` — the single post (Build Master story archetype).
-- `carousel/01-05.png` — the 5 slides, in swipe order.
-- `carousel/instagram/` — the same slides numbered for Instagram.
-- `carousel/linkedin/austin-build-brew.pdf` — one swipeable PDF for LinkedIn (5 pages, 1080×1350).
-- `caption.md` — the captions + tags, with the growth loop closed in the host's voice.
+This is a text walkthrough of how the post was built. The rendered images aren't checked in; build your own on the Paper canvas from `AGENT.md`. See `caption.md` for the captions and tags, with the growth loop closed in the host's voice.
 
 ## The story-first trail (how it was made)
 
@@ -31,7 +26,7 @@ On the Paper canvas, from these archetype picks and photos:
 - **Single post** — Build Master story archetype, from `talk-warm.jpg`. Claim "45 of us built a real project in one night."
 - **Carousel** — Cover board (`group-dusk.jpg`, "One night, six ships.") → two G moments (`build-table.jpg` 7:30 "Everyone paired up and got building."; `coding-screen.jpg` 9:00 "First demos went up, real code and real nerves.") → Invite board (`cafe-lounge.jpg`, "Want to run one in your city? I'll help you start.").
 
-Then exported from Paper: the Instagram images in order, and one LinkedIn PDF (5 pages, 1080×1350).
+Then exported from Paper: the Instagram images in swipe order, and one LinkedIn PDF.
 
 ## Note on the look
 This set is fully tonal on purpose (accent = none): the big word sits in cream instead of an accent
