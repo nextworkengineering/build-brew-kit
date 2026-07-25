@@ -25,7 +25,7 @@ Replace `@____` with real handles and confirm the real NextWork link before post
 >
 > with @____ @____ @____ and @NextWork · #buildandbrew #nextwork #austintech
 
-## Instagram — carousel (`carousel/instagram/01–05.png`, post in order)
+## Instagram — carousel (`carousel/instagram/01-05.png`, post in order)
 > One night in Austin. 45 builders, six ships. Swipe →
 > Want to run one in your city? I'll help you start: nextwork.ai
 >

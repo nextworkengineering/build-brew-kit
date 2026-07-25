@@ -47,7 +47,7 @@ short, tagged link in the caption beats a bare domain.
 ## Example (loop closed, still human)
 > 45 of us packed a room in Austin last night and just built.
 > Six projects went live. Someone shipped their first ever project and you could feel the room lift.
-> A year ago I couldn't do this. NextWork got me here, and now I get to host it.
+> A year ago I couldn't build. NextWork changed that, and now I get to host this.
 > Want to run one in your city? I'll help you start: nextwork.ai
 >
 > with @person1 @person2 @person3 and @NextWork

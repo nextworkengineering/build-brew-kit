@@ -9,7 +9,7 @@ Applied as a filter on the photo layer:
 |---|---|---|
 | G (timestamp) | `brightness(.72) contrast(1.06) saturate(.86)` | Darkest, most mood; a centered time reads over it. |
 | D (block + photo band) | `brightness(.96) contrast(1.05) saturate(.93)` | The photo is a clean band, not a scrim, so it stays brighter. |
-| Build Master story | `brightness(.82) contrast(1.06) saturate(.88)` | Same feel as A. |
+| Build Master story | `brightness(.82) contrast(1.06) saturate(.88)` | Warm, text-over-photo mood. |
 
 Common thread: a small desaturation (`saturate` .86–.93, roughly 7–14% down), a hair more contrast (1.05–1.06), and a brightness set by how much text sits on the photo. Subtle wins. The photo should still read as the moment, never mush.
 

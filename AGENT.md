@@ -78,7 +78,7 @@ A smart friend who has already figured out what you are struggling with. Confide
 
 == THE KIT OF PARTS (pick the archetype that fits the moment) ==
 Each is a ready board in the Paper file (design source in templates/archetypes/). Choose by the photo and the job:
-- D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a bold grotesk claim below. A punchy poster, and the go-to for a LANDSCAPE / wide photo (single post or carousel slide): the photo sits in the band and the text lives in the block below, so it works every time and the text never fights the image. Group-safe: the photo band + block keep the whole crew visible.
+- D · block + photo  (D-block-photo.html) - clean photo up top, a solid paper block with a clean Inter claim below. A punchy poster, and the go-to for a LANDSCAPE / wide photo (single post or carousel slide): the photo sits in the band and the text lives in the block below, so it works every time and the text never fights the image. Group-safe: the photo band + block keep the whole crew visible.
 - G · timestamp moment  (G-timestamp.html) - a photo with one centered time + one line. String them in order to tell the night (6:00 doors -> 7:30 paired up -> 9:00 demos). The carousel spine.
 - Build Master story  (individual-build-master.html) - names YOU + your event, told first person, two-tone. A single post that sells the event by telling how you built something real.
 
@@ -107,7 +107,7 @@ Accent: the default is none (fully tonal). The event photos are the hero, so ask
 One font, Inter, everywhere. No serif, no second family. Display moments (G's timestamp, a cover title, a D or Build Master headline) are Inter Medium 500 at a large size, elegant not heavy; body and labels are Inter 400 / 500. Inter is a free Google font, loaded in the templates with a system-ui fallback. Labels: letter-spacing 0. (We don't ship a paid display face like Suisse: learners can't get the licence, and a free serif substitute looks too different to stay on brand.)
 
 == PHOTOS ==
-iPhone photos are HEIC — convert to JPG before importing to Paper: sips -s format jpeg -Z 1600 IN.HEIC --out OUT.jpg (a one-line prep step, not a render pipeline). Warm/dim shots grade cinematic (great for A, G, Build Master story); bright, empty-topped shots suit D. The board applies the grade — one consistent cinematic treatment (see brand/grade.md; for magenta/RGB party lighting use the strong colored-lighting branch there) — do not pre-edit or use a heavy filter. Never the pixelated-photo look.
+iPhone photos are HEIC — convert to JPG before importing to Paper: sips -s format jpeg -Z 1600 IN.HEIC --out OUT.jpg (a one-line prep step, not a render pipeline). Warm/dim shots grade cinematic (great for G and the Build Master story); bright, empty-topped shots suit D. The board applies the grade — one consistent cinematic treatment (see brand/grade.md; for magenta/RGB party lighting use the strong colored-lighting branch there) — do not pre-edit or use a heavy filter. Never the pixelated-photo look.
 People are the hero, but don't hard-refuse other shots. A candid with faces makes the strongest HERO slide (the cover, a single post, the emotional beats). A screenshot of what someone built, a close-up of the table, a detail shot are all welcome as SUPPORTING slides (a screenshot goes in a D block, never text over the UI). If they hand you only screenshots or desktop grabs, don't reject them: use them as support and ask if there's even one photo with people for the hero, or build a single post around the best shot you have. Explain the role of a shot, never just refuse it.
 Orientation: notice the photo's shape. A LANDSCAPE / wide photo -> use archetype D (photo band + block, text below the photo): it works every time and the text never fights the image, on a single post or a carousel slide. A very wide GROUP shot -> use a 1:1 square, or letterbox-contain the photo on the ground, so no one is cropped. A portrait / vertical photo can fill the frame (cover). Never cover-crop a wide group shot, that silently drops learners.
 Text placement: keep the headline and line in the BOTTOM THIRD of the frame. If type would fall over someone's face, nudge it down (rarely up) so faces stay legible. The human story is the point, so a face is never covered by text. The full-bleed boards carry a bottom-weighted scrim so the words read without hiding anyone.
@@ -138,7 +138,7 @@ Archetype(s): [D / G / build-master]
 Photos: [Desktop folder or list]
 The line(s): [one short line per slide, in the Build Master's own voice]
 Ground: [light (paper) OR dark (leather)]
-Accent: [pumpkin / cornflower / plum / canary / sand / none]
+Accent: [pumpkin / cornflower / plum / canary / sand / emerald / none]
 CTA: [their event handle, or "come build with us"]
 Caption + tags: [draft from templates/caption-and-tags.md — the post's text field; tag everyone in the photos, incl. anyone cropped]
 ```
@@ -157,7 +157,7 @@ Fallbacks, only if Full Disk Access can't be granted:
 
 **Two build modes** — pick by whether the Build Master has the shared master file. Aim for Mode A (build off our template); use Mode B only if they cannot access the shared file.
 - **Mode A · master file (duplicate).** The recommended primary path. Have them open the shared kit file (https://app.paper.design/file/01KY2G5V12Q1BBPY7GC8PRSY1T) and **Duplicate it to their own Paper** first, so their copy carries the brand tokens + fonts + pre-built boards; you work in their copy. (file id `01KY2G5V12Q1BBPY7GC8PRSY1T`) `open_file` it → `duplicate_nodes` the board you picked into a working area → set the Photo frame's fill to the local photo via `paper-asset://` (Full Disk Access on; drag only as a fallback) → `set_text_content` for the copy → apply ground + accent via the board tokens (`set_tokens` / `update_styles`) → `finish_working_on_nodes`. The carousel **Cover and Invite are full-bleed scrim boards that live only in the master — duplicate them; do NOT rebuild the cover as a single-post board.**
-- **Mode B · fresh file (from HTML).** The fallback, when they cannot access the shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same place-photo / fill / copy / token / finish path. A, D, G, Build Master, Cover, and Invite all ship as HTML now, so you can build a full carousel in Mode B too.
+- **Mode B · fresh file (from HTML).** The fallback, when they cannot access the shared master. `create_file` → `write_html` the chosen `templates/archetypes/*.html` into it → same place-photo / fill / copy / token / finish path. D, G, Build Master, Cover, and Invite all ship as HTML now, so you can build a full carousel in Mode B too.
 
 Both modes converge on the same place-photo step: with Full Disk Access you set each board's fill from their folder yourself, and drag is only the fallback. Place the caption + tags as one single selectable text block beside the slides (one clean copy-paste, formatting intact) so the whole post lives in one place; keep that caption block OUT of the exported assets.
 
