@@ -24,10 +24,10 @@ posed line-up.
 ## How it was built
 On the Paper canvas, from these archetype picks and photos:
 - **Single post** — Build Master story archetype, from `talk-warm.jpg`. Claim "45 of us built a real project in one night."
-- **Carousel** — Cover board (`group-dusk.jpg`, "One night, six ships.") → two G moments (`build-table.jpg` 7:30 "Everyone paired up and got building."; `coding-screen.jpg` 9:00 "First demos went up, real code and real nerves.") → Invite board (`cafe-lounge.jpg`, "Want to run one in your city? I'll help you start.").
+- **Carousel** — Cover board (`group-dusk.jpg`, "One night, six ships.") → two G moments (`build-table.jpg` "Everyone paired up and got building."; `coding-screen.jpg` "First demos went up, real code and real nerves.") → Invite board (`cafe-lounge.jpg`, "Want to run one in your city? I'll help you start.").
 
 Then exported from Paper: the Instagram images in swipe order, and one LinkedIn PDF.
 
 ## Note on the look
-This set is fully tonal on purpose (accent = none): the big word sits in cream instead of an accent
+This set is fully tonal on purpose (accent = none): the narrative line sits in cream instead of an accent
 colour. Any archetype can go tonal by setting the accent to none. See `templates/archetypes/README.md`.

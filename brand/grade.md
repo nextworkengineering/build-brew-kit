@@ -7,7 +7,7 @@ Applied as a filter on the photo layer:
 
 | Archetype | Filter | Why this one |
 |---|---|---|
-| G (timestamp) | `brightness(.72) contrast(1.06) saturate(.86)` | Darkest, most mood; a centered time reads over it. |
+| G (moment) | `brightness(.72) contrast(1.06) saturate(.86)` | Darkest, most mood; a centered narrative line reads over it. |
 | D (block + photo band) | `brightness(.96) contrast(1.05) saturate(.93)` | The photo is a clean band, not a scrim, so it stays brighter. |
 | Build Master story | `brightness(.82) contrast(1.06) saturate(.88)` | Warm, text-over-photo mood. |
 
